@@ -17,7 +17,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 * DATABASES = {
 *     'default': {
 *         'ENGINE': 'django.db.backends.postgresql',
-*         'NAME': 'db_djcmpfc_32',
+*         'NAME': 'db_sanjose_42',
 *         'USER': 'postgres',
 *         'PASSWORD': '123456',
 *         'HOST': '127.0.0.1',
@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bases',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,7 @@ WSGI_APPLICATION = 'uesanjose.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_djcmpfc_42',
+        'NAME': 'db_sanjose_42',
         'USER': 'postgres',
         'PASSWORD': 'Espana21',
         'HOST': '127.0.0.1',
@@ -168,3 +169,4 @@ LOGOUT_REDIRECT_URL = '/login/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'bases.Usuario'

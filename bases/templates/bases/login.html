@@ -4,28 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistema de Compras y Facturación por Ernesto Fernandez</title>
+  <title>SIGG-AULA</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{% static 'plugins/icheck-bootstrap/icheck-bootstrap.min.css' %">
+  <link rel="stylesheet" href="{% static 'plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
+  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}"> 
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
-        <!-- /.login-logo -->
-        <div class="card card-outline card-primary">
+        <!-- /.login-logo
+                   <small>Bienvenidos a la </small>   
+         -->
+        <div class="card card-outline card-primary text-center">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/estudiando.jpg' %}" alt="UE San José">         
           <div class="card-header text-center">
-            <div class="h1"><b>DEBS</b> Consultores</div>
+            <div class="h1"><b>UE</b> San José</div>
           </div>
           <div class="card-body">
-            <p class="login-box-msg">Bienvenido a la APP del Curso<br>
-              <strong>Sistema de Compra y Facturación con Django 3.2</strong><br> <small>Ingresa tus Datos</small></p>
-      
+            <p class="login-box-msg">
+              <strong>Donde los niños aprenden, juegan y crecen en un entorno enriquecedor y seguro.</strong><br><br> <small>Ingresa tus Datos</small></p>
             <form  method="post">
               {% csrf_token %}
       

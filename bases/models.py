@@ -4,6 +4,9 @@ from urllib.parse import quote
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 
+from django.contrib.auth.models import User
+from django_userforeignkey.models.fields import UserForeignKey
+
 from .managers import UsuarioManager
 
 # Create your models here.
@@ -36,4 +39,16 @@ class Usuario(AbstractBaseUser,PermissionsMixin):
         return full_name.strip()
     
     def get_short_name(self):
-        return self.first_name
+        return self.first_name 
+    
+class ClaseModelo(models.Model):
+    estado = models.BooleanField(default=True)
+    fc = models.DateTimeField(auto_now_add=True)
+    fm = models.DateTimeField(auto_now=True)
+    # uc = models.ForeignKey(User, on_delete=models.CASCADE)
+    # um = models.IntegerField(blank=True,null=True)
+    uc = UserForeignKey(auto_user_add=True,related_name='+')
+    um = UserForeignKey(auto_user=True,related_name='+')
+
+    class Meta:
+        abstract=True    

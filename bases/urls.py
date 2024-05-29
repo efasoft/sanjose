@@ -3,6 +3,7 @@ from django.contrib.auth import views as auth_views
 
 from bases.views import *
 
+
 app_name = "config"
 
 urlpatterns = [
@@ -23,6 +24,8 @@ urlpatterns = [
 
     path('users/groups/permission/<int:id_grp>/<int:id_perm>',user_group_permission,name="user_groups_permission"),
     path('users/groups/admin/<int:id_usr>/<int:id_grp>',user_group_add,name="user_groups_admin"),
+
+
 
     path('catalogos/categorias',
 	 Home.as_view(),

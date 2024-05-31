@@ -14,24 +14,23 @@
   <link rel="stylesheet" href="{% static 'plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}"> 
+  <!-- Efasoft style -->
+  <link rel="stylesheet" href="{% static 'efasoft/efasoft.css' %}">    
+
 </head>
 <body class="hold-transition login-page">
+
     <div class="login-box">
-        <!-- /.login-logo
-                   <small>Bienvenidos a la </small>   
-         -->
         <div class="card card-outline card-primary text-center">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/estudiando.jpg' %}" alt="UE San José">         
           <div class="card-header text-center">
-            <div class="h1"><b>UE</b> San José</div>
+            <div class="h3"><b>UE</b> SAN JOSÉ</div>
           </div>
           <div class="card-body">
             <p class="login-box-msg">
               <strong>Donde los niños aprenden, juegan y crecen en un entorno enriquecedor y seguro.</strong><br><br> <small>Ingresa tus Datos</small></p>
             <form  method="post">
               {% csrf_token %}
-      
-
               <small class="text-danger">
                 {% if messages %}
                 {% for m in messages%}

@@ -1,0 +1,7 @@
+body.login-page { 
+    background: url("/static/img/estudiando_15_o.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

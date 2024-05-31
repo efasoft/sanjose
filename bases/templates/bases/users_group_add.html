@@ -13,7 +13,7 @@
         <form method="POST" class="form-group">
           {% csrf_token %}
           <div class="form-group">
-            <label for="exampleInputEmail1">Nombre</label>
+            <label for="exampleInputEmail1">Nombre del Grupo</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Nombre Grupo"
             value="{{obj.name}}">
           </div>
@@ -30,7 +30,7 @@
   <div class="col-6">
     <div class="card">
       <div class="card-header">
-        Permisos del Grupo {{obj}}
+        Permisos del Grupo : {{obj}}
       </div>
       <!-- /.card-header -->
       <div class="card-body">
@@ -65,7 +65,7 @@
   <div class="col-6">
     <div class="card">
       <div class="card-header">
-        Todos los Permisos
+        Agregar Permisos al Grupo : {{obj}}
       </div>
       <!-- /.card-header -->
       <div class="card-body">

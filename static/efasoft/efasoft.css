@@ -1,3 +1,4 @@
+/* LOGIN  */
 body.login-page { 
     background: url("/static/img/estudiando_15_o.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -5,3 +6,191 @@ body.login-page {
     -o-background-size: cover;
     background-size: cover;
   }
+
+/* HOME - TITULOS DE LOS SLIDER  */  
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+div.w-100-55{
+  height: 70px;
+  width:100%;
+  margin: 1.55em 40%;
+
+  font-size: calc(18px +16vw);
+}  
+
+div.w-100-56{
+  height: 70px;
+  width:100%;
+  margin: 1.55em 40%;
+
+  font-size: calc(18px +16vw);
+}
+
+p.mb-55{
+  color:#141158;
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+
+}
+
+
+/* block-$ */
+
+p.mb-55::after {
+  content: '';
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+p.mb-56{
+  color:#141158;
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+
+}
+
+p.mb-56::after {
+  content: '';
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
+  }
+}
+
+@keyframes revealingIn {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+
+
+/* HOME - CONOCE NUESTRA ESCUELA - Boton .. Leer mas - */
+ 
+
+.item .btn-primary{
+  box-shadow: 0px 5px 20px -10px #1376c5;
+  border-radius: 5px;
+}
+
+.item .btn-primary:hover {
+  background-color:#09C5B7;
+  border: 1px solid #d0d0d0;
+  animation-name: wiggle;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translate(0,0);
+  }
+  25%,
+  75% {
+    transform: translate(10px,0);
+  }
+  50% {
+    transform: translate(-10px,0);
+  }
+}
+
+
+
+/* HOME - CURSOS Y TALLERES */
+.slider-item{
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none;
+}
+
+.owl-carousel .slider-item h1{
+  text-align:center;  
+  font:15px/30px RalewayR;
+  color:#FFF;
+  overflow:hidden;
+  -webkit-animation:fadeInDown 1s both 1s;
+          animation:fadeInDown 1s both 1s;
+}
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}

@@ -25,6 +25,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
 
+  <!-- Efasoft style -->
+  <link rel="stylesheet" href="{% static 'efasoft/efasoft.css' %}">     
+
+  <!-- Carrousel 01 Cursos y Talleres -->
+  <link rel="stylesheet" href="{% static 'efasoft/owl.carousel.min.css' %}">    
+  <link rel="stylesheet" href="{% static 'efasoft/owl.theme.default.min.css' %}">  
+  <link rel="stylesheet" href="{% static 'efasoft/style_car_01.css' %}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+
+  <!-- Carrousel 08 Staff de Profesoras -->
+  <link rel="stylesheet" href="{% static 'efasoft/style_car_08.css' %}">  
+  <link rel="stylesheet" href="{% static 'efasoft/animate.css' %}"> 
+
+  <!-- Carrousel 07 Opciones de nuestra Escuela -->
+   <link rel="stylesheet" href="{% static 'efasoft/style_car_07.css' %}"> 
+
+
   <!-- BootSptrap 5.3.3 
   <link rel="stylesheet" href="{% static 'bootstrap-5.3.3-dist/css/bootstrap.min.css' %}">  
 -->
@@ -41,10 +58,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="index3.html" class="nav-link">Inicio</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Contáctanos</a>
       </li>
     </ul>
 
@@ -354,19 +371,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
       {% block content_wrapper%}  
     <!-- Content Header (Page header) -->
     <div class="content-header">
+    <!--
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Starter Page</h1>
-          </div><!-- /.col -->
+          </div><!-- /.col 
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Starter Page</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+          </div><!-- /.col 
+        </div><!-- /.row 
+      </div><!-- /.container-fluid 
+    -->  
     </div>
     {% endblock content_wrapper %}    
     <!-- /.content-header -->
@@ -375,63 +394,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
           {% block content %}      
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-        </div>
         {% endblock content %}        
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -458,10 +421,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2024 <a href="#">EFA SoftWeb</a>.</strong> All rights reserved.
   </footer>
   {% endblock footer %}  
 </div>
@@ -494,10 +457,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- AdminLTE App -->
 <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
 
+<!-- Carrousel 01 Cursos y Talleres -->
+<script src="{% static 'efasoft/js/popper.js' %}"></script>
+<script src="{% static 'efasoft/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'efasoft/js/main.js' %}"></script>
+
+
+<!-- Carrousel 07 Opciones de nuestra Escuela -->
+<script src="{% static 'efasoft/js/main_efa_07.js' %}"></script>
+
+<!-- Carrousel 07 Opciones de nuestra Escuela -->
+<script src="{% static 'efasoft/js/main_efa_08.js' %}"></script>
+
 <!-- BootSptrap 5.3.3 
 <script src="{% static 'bootstrap-5.3.3-dist/js/bootstrap.min.js' %}"></script>
 -->
 <script>
+
+  $(document).ready(function(){ irArriba(); }); //Hacia arriba
+
+  function irArriba(){
+    $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
+    $(window).scroll(function(){
+      if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
+    });
+    $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
+  }
+
 
   $("#btnLogout").click(function(e){
     Swal.fire({

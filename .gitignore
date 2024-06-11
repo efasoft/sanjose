@@ -23,6 +23,8 @@ media
 
 # C extensions
 *.so
+*.xls
+*.xlsx
 
 # Distribution / packaging
 .Python

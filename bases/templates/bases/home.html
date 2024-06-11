@@ -1,5 +1,370 @@
 {% extends 'base/index.html' %}
 
-{% block content_wrapper %}{% endblock %}
+{% block content_wrapper %}
+
+{% endblock %}
 {% block content %}
-{% endblock%}
+  <!-- Boton hacia arriba -->
+  <a class="ir-arriba">
+   <span class="fa-stack" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio" >
+     <i class="fa fa-circle fa-stack-2x"></i>
+     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+   </span>
+  </a>
+  <!-- Carrousel 07 Opciones de nuestra Escuela -->
+  <section id="conoce-la-escuela">      
+    <div class="container">
+      <div class="row" style="height: 70px;">
+        <div class="col-md-12">    
+         <div class="desc w-100-55" style="--td: 1.2s">
+              <p class="h3 mb-55" style="--bc: #D0CEF8; --d: .1s">BIENVENIDOS</p>
+          </div>
+        </div>
+      </div>       
+      <div class="row" style="height: 620px;">
+        <div class="col-md-12">
+          <div class="featured-carousel owl-carousel">
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/staff-01.jpg);" >
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#staff">Staff de Docentes</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                        <p class="mb-0"><a href="#staff" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/curso-01.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#cursos-y-talleres">Cursos y Talleres</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#cursos-y-talleres" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/galeria-03.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Galeria de Fotos</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-03.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#blog-escuela">Nuestro Blog</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#blog-escuela" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/actividad-01.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/escribenos-04.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Contáctanos</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Carrousel 07 Opciones de nuestra Escuela -->
+
+  <!-- Carrousel 08 - Staff de Profesoras - -->
+  <section id="staff">   
+    <div class="container">
+      <div class="row" style="height: 70px;">
+        <div class="col-md-12">    
+          <div class="desc w-100-55" style="--td: 1.2s">
+            <p class="h3 mb-55" style="--bc: #D0CEF8; --d: .1s">STAFF DE DOCENTES</p>
+          </div>
+        </div>
+      </div>        
+      <div class="row">
+       <div class="col-md-12">
+        <div class="featured-carousel-08 owl-carousel">
+          <!-- Staff de Docentes - Item 01 -->                
+          <div class="item">
+            <div class="row justify-content-center">
+              <div class="col-md-11">
+                <div class="testimony-wrap d-md-flex">
+                  <div class="img" style="background-image: url(static/img/maestra_08.jpg); height: 570px;"></div>
+                  <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+                    <div class="desc w-100">
+                      <p class="h3 mb-5">"Acompañando a cada niño en su aprendizaje</p>
+                      <div class="pt-4">
+                        <p class="name mb-0">&mdash; Julia Martinez</p>
+                        <span class="position">Profesora : III Nivel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Staff de Docentes - Item 02 -->             
+          <div class="item">
+            <div class="row justify-content-center">
+              <div class="col-md-11">
+                <div class="testimony-wrap d-md-flex">
+                  <div class="img" style="background-image: url(static/img/maestra_09.jpg); height: 570px;"></div>
+                  <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+                    <div class="desc w-100">
+                      <p class="h3 mb-5">"En cada vivencia, vamos dejando huellas</p>
+                      <div class="pt-4">
+                        <p class="name mb-0">&mdash; Yanet Marfil</p>
+                        <span class="position">Profesora : 1er. Grado</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Staff de Docentes - Item 03 -->             
+          <div class="item">
+            <div class="row justify-content-center">
+              <div class="col-md-11">
+                <div class="testimony-wrap d-md-flex">
+                  <div class="img" style="background-image: url(static/img/maestra_10.jpg); height: 570px;"></div>
+                  <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+                    <div class="desc w-100">
+                      <p class="h3 mb-5">"El logro de cada niño, es nuestra mayor satisfacción</p>
+                      <div class="pt-4">
+                        <p class="name mb-0">&mdash; Teresa Guiller</p>
+                        <span class="position">Profesora : 5to. Grado</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Staff de Docentes - End -->             
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+  <!-- End - Staff de Profesoras - -->
+
+  <!-- Carrousel 01 - Cursos y Talleres - -->
+  <section id="cursos-y-talleres">      
+    <div class="row" style="height: 70px;">
+      <div class="col-md-12">    
+        <div class="desc w-100-55" style="--td: 1.2s">
+          <p class="h3 mb-55" style="--bc: #D0CEF8; --d: .1s">CURSOS Y TALLERES</p>
+        </div>
+      </div>
+    </div>      
+    <div class="home-slider owl-carousel">
+
+     <div class="slider-item" style="background-image:url(static/img/robotica_01.jpg); height: 630px; ">
+      <div class="overlay"></div>
+       <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-md-12 ">
+            <div class="text w-100 text-center">
+              <h2>Despertamos su creatividad</h2>
+              <h1 class="mb-3">Robótica</h1>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+
+     <div class="slider-item" style="background-image:url(static/img/robotica_02.jpg); height: 630px;">      
+      <div class="overlay"></div>
+       <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-md-12 ">
+            <div class="text w-100 text-center">
+              <h2>Fortalecemos su confianza, para cumplir sus objetivos</h2>
+              <h1 class="mb-3">Robótica</h1>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>   
+     
+     <div class="slider-item" style="background-image:url(static/img/robotica_03.jpg); height: 630px;">      
+      <div class="overlay"></div>
+       <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-md-12 ">
+            <div class="text w-100 text-center">
+              <h2>Fomentamos el trabajo en equipo</h2>
+              <h1 class="mb-3">Robótica</h1>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>     
+
+    </div>
+  </section>  
+  <!-- End - Cursos y Talleres - -->  
+
+  <!-- Carrousel 07 Opciones de nuestra Escuela -->
+  <section id="blog-escuela">      
+    <div class="container">
+      <div class="row" style="height: 70px;">
+        <div class="col-md-12">    
+         <div class="desc w-100-55" style="--td: 1.2s">
+              <p class="h3 mb-55" style="--bc: #D0CEF8; --d: .1s">NUESTRO BLOG</p>
+          </div>
+        </div>
+      </div>       
+      <div class="row" style="height: 620px;">
+        <div class="col-md-12">
+          <div class="featured-carousel owl-carousel">
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-01.jpg);" >
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#staff">Comparte Blog</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                        <p class="mb-0"><a href="#staff" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-02.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="cursos-y-talleres">Mas datos</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#cursos-y-talleres" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-03.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Animate</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-04.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Hazlo ahora</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/actividad-01.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="blog-entry">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/escribenos-04.jpg);">
+
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="#">Contáctanos</a></h3>
+                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Carrousel 07 Opciones de nuestra Escuela -->
+
+
+
+{% endblock %}
+

@@ -1,5 +1,6 @@
-{% extends 'base/index.html' %}
 
+{% extends 'base/index.html' %}
+{% load static %}
 {% block content_wrapper %}
 
 {% endblock %}
@@ -12,21 +13,21 @@
    </span>
   </a>
   <!-- Carrousel 07 Opciones de nuestra Escuela -->
-  <section id="conoce-la-escuela">      
+  <section id="conoce-la-escuela" style="background-image:url({% static 'img/galeria-01-o.jpg' %}); max-width: 100%; max-height: 100%;">      
     <div class="container">
       <div class="row" style="height: 70px;">
         <div class="col-md-12">    
          <div class="desc w-100 text-center" style="margin: 1.55em ">
-              <p class="h3 mb-5 animate__animated animate__bounceInDown animate__slower animate__infinite">BIENVENIDOS</p>
+              <p class="h3 mb-5 animate__animated animate__bounceInDown animate__slower animate__infinite" style="color:#FFF; ">BIENVENIDOS</p>
           </div>
         </div>
       </div>       
       <div class="row" style="height: 620px;">
         <div class="col-md-12">
           <div class="featured-carousel owl-carousel">
-            <div class="item">
+            <div class="item card card-danger card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/staff-01.jpg);" >
+                <a href="#staff" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/staff-01.jpg' %});" >
                 </a>
                 <div class="text border border-top-0 p-4">
                   <h3 class="heading"><a href="#staff">Staff de Docentes</a></h3>
@@ -38,9 +39,9 @@
               </div>
             </div>
 
-            <div class="item">
+            <div class="item card card-warning card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/curso-01.jpg);">
+                <a href="#cursos-y-talleres" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/curso-01.jpg' %});">
 
                 </a>
                 <div class="text border border-top-0 p-4">
@@ -53,9 +54,9 @@
               </div>
             </div>
 
-            <div class="item">
+            <div class="item card card-success card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/galeria-03.jpg);">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/galeria-03.jpg' %});">
 
                 </a>
                 <div class="text border border-top-0 p-4">
@@ -68,39 +69,39 @@
               </div>
             </div>
 
-            <div class="item">
+            <div class="item card card-info card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-03.jpg);">
+                <a href="#nuestro-blog" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/blog-03.jpg' %});">
 
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#blog-escuela">Nuestro Blog</a></h3>
+                  <h3 class="heading"><a href="#nuestro-blog">Nuestro Blog</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                   <div class="d-flex align-items-center mt-4">
-                    <p class="mb-0"><a href="#blog-escuela" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                    <p class="mb-0"><a href="#nuestro-blog" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                   </div>
               </div>
             </div>
 
-            <div class="item">
+            <div class="item card card-warning card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/actividad-01.jpg);">
+                <a href="#proximas-actividades" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-01.jpg' %});">
 
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
+                  <h3 class="heading"><a href="#proximas-actividades">Próximas Actividades</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                    <div class="d-flex align-items-center mt-4">
-                    <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                    <p class="mb-0"><a href="#proximas-actividades" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="item">
+            <div class="item card card-success card-outline">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/escribenos-04.jpg);">
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/escribenos-04.jpg' %});">
 
                 </a>
                 <div class="text border border-top-0 p-4">
@@ -121,12 +122,12 @@
   <!-- End Carrousel 07 Opciones de nuestra Escuela -->
 
   <!-- Carrousel 08 - Staff de Profesoras - -->
-  <section id="staff">   
+  <section id="staff" style="background-image:url({% static 'img/patron_fondo_01.jpg' %}); max-width: 100%; max-height: 100%;">   
     <div class="container">
       <div class="row" style="height: 70px;">
         <div class="col-md-12">    
           <div class="desc w-100 text-center" style="margin: 1.55em ">
-            <p class="h3 mb-5 animate__animated animate__backInLeft animate__slower animate__infinite">STAFF DE DOCENTES</p>
+            <p class="h3 mb-5 animate__animated animate__backInLeft animate__slower animate__infinite" style="background-color:#FF9933; opacity: .4; color:#010100">STAFF DE DOCENTES</p>            
         </div>
         </div>
       </div>        
@@ -138,7 +139,10 @@
             <div class="row justify-content-center">
               <div class="col-md-11">
                 <div class="testimony-wrap d-md-flex">
-                  <div class="img" style="background-image: url(static/img/maestra_08.jpg); height: 570px;"></div>
+                  <div class="img" style="background-image:url({% static 'img/maestra_08.jpg' %}); height: 590px;"></div>
+                  
+
+
                   <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
                     <div class="desc w-100">
                       <p class="h3 mb-5">"Acompañando a cada niño en su aprendizaje</p>
@@ -157,7 +161,7 @@
             <div class="row justify-content-center">
               <div class="col-md-11">
                 <div class="testimony-wrap d-md-flex">
-                  <div class="img" style="background-image: url(static/img/maestra_09.jpg); height: 570px;"></div>
+                  <div class="img" style="background-image:url({% static 'img/maestra_09.jpg' %}); height: 590px;"></div>
                   <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
                     <div class="desc w-100">
                       <p class="h3 mb-5">"En cada vivencia, vamos dejando huellas</p>
@@ -176,7 +180,7 @@
             <div class="row justify-content-center">
               <div class="col-md-11">
                 <div class="testimony-wrap d-md-flex">
-                  <div class="img" style="background-image: url(static/img/maestra_10.jpg); height: 570px;"></div>
+                  <div class="img" style="background-image:url({% static 'img/maestra_10.jpg' %}); height: 590px;"></div>
                   <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
                     <div class="desc w-100">
                       <p class="h3 mb-5">"El logro de cada niño, es nuestra mayor satisfacción</p>
@@ -199,7 +203,7 @@
   <!-- End - Staff de Profesoras - -->
 
   <!-- Carrousel 01 - Cursos y Talleres - -->
-  <section id="cursos-y-talleres">      
+  <section id="cursos-y-talleres" style="max-width: 100%; max-height: 100%;">      
     <div class="row" style="height: 70px;">
       <div class="col-md-12">    
         <div class="desc w-100 text-center" style="margin: 1.55em ">
@@ -207,9 +211,9 @@
       </div>
       </div>
     </div>      
-    <div class="home-slider owl-carousel">
+    <div class="home-slider owl-carousel" style="max-width: 100%; max-height: 100%;">
 
-     <div class="slider-item" style="background-image:url(static/img/robotica_01.jpg); height: 630px; ">
+     <div class="slider-item" style="background-image:url({% static 'img/robotica_01.jpg' %});">
       <div class="overlay"></div>
        <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -223,7 +227,7 @@
        </div>
      </div>
 
-     <div class="slider-item" style="background-image:url(static/img/robotica_02.jpg); height: 630px;">      
+     <div class="slider-item" style="background-image:url({% static 'img/robotica_02.jpg' %}); max-width: 100%; max-height: 100%;">      
       <div class="overlay"></div>
        <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -237,7 +241,7 @@
        </div>
      </div>   
      
-     <div class="slider-item" style="background-image:url(static/img/robotica_03.jpg); height: 630px;">      
+     <div class="slider-item" style="background-image:url({% static 'img/robotica_03.jpg' %}); max-width: 100%; max-height: 100%;">      
       <div class="overlay"></div>
        <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -255,14 +259,14 @@
   </section>  
   <!-- End - Cursos y Talleres - -->  
 
-  <!-- Carrousel 07 Opciones de nuestra Escuela -->
-  <section id="blog-escuela">      
+  <!-- Carrousel 07 Próximas Actividades -->
+  <section id="proximas-actividades">      
     <div class="container">
       <div class="row" style="height: 70px;">
         <div class="col-md-12">    
           <div class="desc w-100 text-center" style="margin: 1.55em ">
-            <p class="h3 mb-5 animate__animated animate__zoomInRight animate__slower animate__infinite">NUESTRO BLOG</p>
-        </div>
+            <p class="h3 mb-5 animate__animated animate__zoomInRight animate__slower animate__infinite" style="background-color:#124F51; opacity: .4; color:#FFF">PRÓXIMAS ACTIVIDADES</p>
+          </div>
         </div>
       </div>       
       <div class="row" style="height: 620px;">
@@ -270,10 +274,15 @@
           <div class="featured-carousel owl-carousel">
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-01.jpg);" >
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-01.jpg' %});" >
+                  <div class="meta-date text-center p-2">
+                    <span class="day">26</span>
+                    <span class="mos">Jun.</span>
+                    <span class="yr">2024</span>
+                  </div>                 
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#staff">Comparte Blog</a></h3>
+                  <h3 class="heading"><a href="#staff">Fin de Curso</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                   <div class="d-flex align-items-center mt-4">
                         <p class="mb-0"><a href="#staff" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -284,11 +293,15 @@
 
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-02.jpg);">
-
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-02.jpg' %});">
+                  <div class="meta-date text-center p-2">
+                    <span class="day">12</span>
+                    <span class="mos">Jun.</span>
+                    <span class="yr">2024</span>
+                  </div>  
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="cursos-y-talleres">Mas datos</a></h3>
+                  <h3 class="heading"><a href="cursos-y-talleres">Presentacion 4to. Grado</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                   <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#cursos-y-talleres" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -299,11 +312,15 @@
 
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-03.jpg);">
-
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-03.jpg' %});">
+                  <div class="meta-date text-center p-2">
+                    <span class="day">31</span>
+                    <span class="mos">Jul.</span>
+                    <span class="yr">2024</span>
+                  </div> 
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#">Animate</a></h3>
+                  <h3 class="heading"><a href="#">Cumple Rodri</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -314,11 +331,15 @@
 
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/blog-04.jpg);">
-
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-04.jpg' %});">
+                  <div class="meta-date text-center p-2">
+                    <span class="day">15</span>
+                    <span class="mos">Jul.</span>
+                    <span class="yr">2024</span>
+                  </div> 
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#">Hazlo ahora</a></h3>
+                  <h3 class="heading"><a href="#">Tía Beba</a></h3>
                   <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
                   <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -329,8 +350,12 @@
 
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/actividad-01.jpg);">
-
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-05.jpg' %});">
+                  <div class="meta-date text-center p-2">
+                    <span class="day">15</span>
+                    <span class="mos">Jul.</span>
+                    <span class="yr">2024</span>
+                  </div> 
                 </a>
                 <div class="text border border-top-0 p-4">
                   <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
@@ -344,8 +369,12 @@
 
             <div class="item">
               <div class="blog-entry">
-                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url(static/img/escribenos-04.jpg);">
-
+                <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-06.jpg' %});">
+                  <div class="meta-date text-center p-2">
+                    <span class="day">15</span>
+                    <span class="mos">Jul.</span>
+                    <span class="yr">2024</span>
+                  </div> 
                 </a>
                 <div class="text border border-top-0 p-4">
                   <h3 class="heading"><a href="#">Contáctanos</a></h3>
@@ -362,9 +391,76 @@
       </div>
     </div>
   </section>
-  <!-- End Carrousel 07 Opciones de nuestra Escuela -->
+  <!-- End Carrousel 07 Próximas Actividades -->
 
-
-
+  <!-- Carrousel 03 Nurestro Blog -->
+  <section id="nuestro-blog">
+		<div class="container">
+      <div class="row" style="height: 70px;">
+        <div class="col-md-12">    
+          <div class="desc w-100 text-center" style="margin: 1.55em ">
+            <p class="h3 mb-5 animate__animated animate__zoomInRight animate__slower animate__infinite" style="background-color:#124F51; opacity: .4; color:#FFF">PARTICIPA EN NUESTO BLOG</p>
+          </div>
+        </div>
+      </div>         
+			<div class="row">
+				<div class="col-md-12">
+					<div class="featured-carousel-03 owl-carousel">
+							<div class="item">
+								<div class="work">
+									<div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-01.jpg);">
+										<div class="text w-100">
+											<span class="cat">Web Design</span>
+											<h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="work">
+									<div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-02.jpg);">
+										<div class="text w-100">
+											<span class="cat">Web Design</span>
+											<h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="work">
+									<div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-03.jpg);">
+										<div class="text w-100">
+											<span class="cat">Web Design</span>
+											<h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="work">
+									<div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-04.jpg);">
+										<div class="text w-100">
+											<span class="cat">Web Design</span>
+											<h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="work">
+									<div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-05.jpg);">
+										<div class="text w-100">
+											<span class="cat">Web Design</span>
+											<h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+  <!-- End Carrousel 03 NUesto Blog -->
 {% endblock %}
 

@@ -13,27 +13,26 @@
 	fullHeight();
 
 	var carousel = function() {
-		$('.featured-carousel-08').owlCarousel({
-	    loop:true,
+		$('.featured-carousel-03').owlCarousel({
+	    loop: true,
 	    autoplay: true,
-	    autoHeight: false,
 	    margin:30,
-	    animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
 	    nav:true,
 	    dots: false,
 	    autoplayHoverPause: false,
 	    items: 1,
-	    navText : ["<p><small>Ant.</small><span class='ion-ios-arrow-round-back'></span></p>","<p><small>Sig.</small><span class='ion-ios-arrow-round-forward'></span></p>"],
+	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
 	    responsive:{
 	      0:{
 	        items:1
 	      },
 	      600:{
-	        items:1
+	        items:2
 	      },
 	      1000:{
-	        items:1
+	        items:3
 	      }
 	    }
 		});

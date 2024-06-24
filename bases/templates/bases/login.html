@@ -23,12 +23,17 @@
     <div class="login-box">
         <div class="card card-outline card-primary text-center">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/estudiando.jpg' %}" alt="UE San José">         
-          <div class="card-header text-center">
+          <div class="card-header text-center" style="height: 50px; padding:6px;" >
             <div class="h3"><b>UE</b> SAN JOSÉ</div>
           </div>
           <div class="card-body">
             <p class="login-box-msg">
-              <strong>Donde los niños aprenden, juegan y crecen en un entorno enriquecedor y seguro.</strong><br><br> <small>Ingresa tus Datos</small></p>
+              <strong>Donde los niños aprenden, juegan y crecen en un entorno enriquecedor y seguro.</strong><br> 
+              <a href="/" class="btn btn-link"><small>Conoce nuestra escuela</small></a> <br> 
+              <small>ó</small><br>
+              <small>Identificate</small>                        
+            </p>
+         
             <form  method="post">
               {% csrf_token %}
               <small class="text-danger">
@@ -54,7 +59,7 @@
                 {% endif %}
               </small>
               <div class="input-group mb-3">
-                <input type="email" name="username" id="id_username" autofocus="" class="form-control" placeholder="Email">
+                <input type="email" name="username" id="id_username" autofocus="" value="" class="form-control" placeholder="Email">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
@@ -62,7 +67,7 @@
                 </div>
               </div>
               <div class="input-group mb-3">
-                <input type="password" class="form-control" name="password" id="id_password" placeholder="Password">
+                <input type="password" class="form-control" name="password" id="id_password" value="" placeholder="Password">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-lock"></span>
@@ -70,13 +75,16 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-8">
-                </div>
                 <!-- /.col -->
-                <div class="col-4">
-                  <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-                </div>
-                <!-- /.col -->
+                  <div class="col-8">
+
+                  </div>
+               
+                  <div class="col-4">
+                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                  </div>
+
+                <!--/.col -->
               </div>
             </form>
       

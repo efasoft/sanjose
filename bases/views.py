@@ -12,9 +12,13 @@ from .models import Usuario
 from .forms import Userform
 
 # Create your views here.
-class Home(LoginRequiredMixin,TemplateView):
+class Home(TemplateView):
+    # Se llama a la pagina inicio.. Sin Loguearse
+    # Para controlar que se haga primero el Login, se debe agregar 
+    # en la Clase - LoginRequiredMixin y el url
+    # login_url = 'config:login'
     template_name = 'bases/home.html'
-    login_url = 'config:login'
+
 
 class UserList(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     template_name = "bases/users_list.html"

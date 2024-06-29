@@ -25,6 +25,7 @@ media
 *.so
 *.xls
 *.xlsx
+*.pptx
 
 # Distribution / packaging
 .Python

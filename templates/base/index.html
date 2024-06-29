@@ -56,7 +56,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+
+<body class="hold-transition sidebar-mini  layout-navbar-fixed">
+
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -67,7 +69,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" data-accordion="true" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a class="nav-link"  href="#" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio">
+        <a class="nav-link"  href="/" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio">
           <i class="fa-solid fa-house"></i>
         </a>
       </li>       
@@ -150,8 +152,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <!-- NUESTRA ESCUELA  -->   
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa-solid fa-house"></i>
+            <a href="{% url 'config:home' %}" class="nav-link">
+              <i class="nav-icon fa-solid fa-school"></i>
              <p>
               Nuestra Escuela
              </p>
@@ -160,7 +162,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- End NUESTRA ESCUELA  --> 
           <!-- STAFF DE DOCENTES  -->   
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{% url 'config:staff_doc_uesj' %}" class="nav-link">
               <i class="nav-icon fa-solid fa-person-chalkboard"></i>
              <p>
               Staff de Docentes
@@ -170,7 +172,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- End STAFF DE DOCENTES  -->      
           <!-- CURSOS Y TALLERES  -->   
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{% url 'config:cursos_y_talleres' %}" class="nav-link">
               <i class="nav-icon fa-solid fa-chalkboard-user"></i>
              <p>
               Cursos y Talleres
@@ -180,7 +182,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- End CURSOS Y TALLERTES  -->     
           <!-- PROXIMAS ACTIVIDADES  -->   
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{% url 'config:proximas_actividades' %}" class="nav-link">
               <i class="nav-icon fa-solid fa-masks-theater"></i>
              <p>
               Próximas Actividades
@@ -190,7 +192,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- End PROXIMAS ACTIVIDADES  -->        
           <!-- NUESTRO BLOGG  -->   
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{% url 'config:nuestro_blog' %}" class="nav-link">
               <i class="nav-icon fa-solid fa-photo-film"></i>
              <p>
               Nuestro Blog
@@ -956,6 +958,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       {% block content_wrapper%}  
     <!-- Content Header (Page header) -->
     <div class="content-header">
+
+
+
+
     <!--
       <div class="container-fluid">
         <div class="row mb-2">
@@ -1009,7 +1015,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2024 <a href="#">EFA SoftWeb</a>.</strong> All rights reserved.
+    <small><strong>Copyright &copy; 2024 </strong></small>   
+    <img src="{% static 'img/efa_soft.jpg' %}" alt="EFA Soft" height="27" width="50" > 
+    </strong> <small><strong>All rights reserved.</strong></small>  
   </footer>
   {% endblock footer %}  
 </div>
@@ -1105,6 +1113,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
        }
     })
 
+    $('[data-widget="pushmenu"]').PushMenu('collapse')
+
     $("#tbl").DataTable({
       "pageLength": 5,        
       "language": {
@@ -1133,7 +1143,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     },
 
       "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      "buttons": ["csv", "excel", "pdf", "print"]
     }).buttons().container().appendTo('#tbl_wrapper .col-md-6:eq(0)');
   })
 
@@ -1143,6 +1153,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
           return new bootstrap.Tooltip(tooltipTriggerEl)
       })
   }, false);
+
+  $("#btnEnviarDatos").click(function(e)
+  {
+   let enviodatos = document.getElementById('mis_datos');
+   enviodatos.submit();
+  })  
 
   function abrir_borrar(desc,url){
     Swal.fire({

@@ -1,118 +1,130 @@
+
 {% extends 'base/index.html' %}
+
 {% load static %}
 {% block content_wrapper %}
 
 {% endblock %}
 {% block content %}
-  <!-- Boton hacia arriba -->
+  <!-- Boton hacia arriba 
   <a class="ir-arriba">
    <span class="fa-stack" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio" >
      <i class="fa fa-circle fa-stack-2x"></i>
      <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
    </span>
-  </a>
+  </a>-->
   <!-- Carrousel 07 Opciones de nuestra Escuela -->
-  <section id="conoce-la-escuela" style="background-image:url({% static 'img/galeria-01-o.jpg' %}); max-width: 100%; max-height: 100%;">      
+  <section id="conoce-la-escuela" style="background-image:url({% static 'img/galeria-01-o.jpg' %}); max-width: 100%; height: 620px;">      
     <div class="container">
-      <div class="row" style="height: 70px;">
-        <div class="col-md-12">    
-         <div class="desc w-100 text-center" style="margin: 1.55em ">
-              <p class="h3 mb-5 animate__animated animate__bounceInDown animate__slower animate__infinite" style="color:#FFF; ">BIENVENIDOS</p>
-          </div>
+      <div class="row" >
+        <div class="col-md-12" style="height: 55px;">    
+              <p class="h3 text-center animate__animated animate__bounceInDown animate__slower animate__infinite" style="color:#FFF; margin: 0.60em;">BIENVENIDOS</p>
         </div>
       </div>       
-      <div class="row" style="height: 620px;">
+      <div class="row" style="height: 560px;">
         <div class="col-md-12">
           <div class="featured-carousel owl-carousel">
+            
+            <!-- NUESTRA ESCUELA  -->   
             <div class="item card card-danger card-outline">
               <div class="blog-entry">
-                <a href="#staff" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/staff-01.jpg' %});" >
+                <a href="{% url 'config:staff_doc_uesj' %}" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/uesanjose_principal.jpg' %});" >
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#staff">Staff de Docentes</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <h3 class="heading"><a href="{% url 'config:staff_doc_uesj' %}">Nuestra Escuela</a></h3>
+                  <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p>                  
                   <div class="d-flex align-items-center mt-4">
-                        <p class="mb-0"><a href="#staff" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        <p class="mb-0"><a href="{% url 'config:staff_doc_uesj' %}" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <!-- STAFF DE DOCENTES  -->   
+            <div class="item card card-info card-outline">
+              <div class="blog-entry">
+                <a href="{% url 'config:staff_doc_uesj' %}" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/staff-01.jpg' %});" >
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="{% url 'config:staff_doc_uesj' %}">Staff de Docentes</a></h3>
+                  <p>Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <div class="d-flex align-items-center mt-4">
+                        <p class="mb-0"><a href="{% url 'config:staff_doc_uesj' %}" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                 </div>
               </div>
             </div>
-
+            <!-- CURSOS Y TALLERES  -->   
             <div class="item card card-warning card-outline">
               <div class="blog-entry">
-                <a href="#cursos-y-talleres" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/curso-01.jpg' %});">
-
+                <a href="{% url 'config:cursos_y_talleres' %}" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/curso-01.jpg' %});">
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#cursos-y-talleres">Cursos y Talleres</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <h3 class="heading"><a href="{% url 'config:cursos_y_talleres' %}">Cursos y Talleres</a></h3>
+                  <p>Que permiten fortalecer en nuestos alumnos y docentes sus valores academicos y espirituales.</p>                  
                   <div class="d-flex align-items-center mt-4">
-                    <p class="mb-0"><a href="#cursos-y-talleres" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                    <p class="mb-0"><a href="{% url 'config:cursos_y_talleres' %}" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                 </div>
               </div>
             </div>
-
+            <!-- PROXIMAS ACTIVIDADES  --> 
+            <div class="item card card-warning card-outline">
+              <div class="blog-entry">
+                <a href="{% url 'config:proximas_actividades' %}" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-01.jpg' %});">
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="{% url 'config:proximas_actividades' %}">Próximas Actividades</a></h3>
+                   <p>Toma nota de los eventos que la escuela tiene prerado para este año escolar. Comparte y disfruta de nuestras actividades.</p>                       
+                   <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="{% url 'config:proximas_actividades' %}" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- NUESTRO BLOG  --> 
+            <div class="item card card-info card-outline">
+              <div class="blog-entry">
+                <a href="{% url 'config:nuestro_blog' %}" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/blog-03.jpg' %});">
+                </a>
+                <div class="text border border-top-0 p-4">
+                  <h3 class="heading"><a href="{% url 'config:nuestro_blog' %}">Nuestro Blog</a></h3>
+                    <p>Comparte e interactua con la escuela en este espacio destinado a los representates y alumnos.</p>                    
+                  <div class="d-flex align-items-center mt-4">
+                    <p class="mb-0"><a href="{% url 'config:nuestro_blog' %}" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <!-- GALERIA DE FOTOS  --> 
             <div class="item card card-success card-outline">
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/galeria-03.jpg' %});">
-
                 </a>
                 <div class="text border border-top-0 p-4">
                   <h3 class="heading"><a href="#">Galeria de Fotos</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <p>Disfruta y revive momentos inolvidables de nuestra escuela a traves del abanico de imagenes.</p>                   
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="item card card-info card-outline">
-              <div class="blog-entry">
-                <a href="#nuestro-blog" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/blog-03.jpg' %});">
-
-                </a>
-                <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#nuestro-blog">Nuestro Blog</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
-                  <div class="d-flex align-items-center mt-4">
-                    <p class="mb-0"><a href="#nuestro-blog" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
-                  </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="item card card-warning card-outline">
-              <div class="blog-entry">
-                <a href="#proximas-actividades" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-01.jpg' %});">
-
-                </a>
-                <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#proximas-actividades">Próximas Actividades</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
-                   <div class="d-flex align-items-center mt-4">
-                    <p class="mb-0"><a href="#proximas-actividades" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <!-- ESCRIBENOS  --> 
             <div class="item card card-success card-outline">
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/escribenos-04.jpg' %});">
-
                 </a>
                 <div class="text border border-top-0 p-4">
-                  <h3 class="heading"><a href="#">Contáctanos</a></h3>
-                  <p>Trabajar en una escuela es una gran responsabilidad. Contamos con profesionales honestos y preparados, que son el ejemplo de nuestros valores.</p>
+                  <h3 class="heading"><a href="#">Escribenos</a></h3>
+                  <p>Comunicate con nosotros, nuestro personal Docente y Administrativo resolveran cualquier duda o inquietud que tengas.</p>                   
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
+
           </div>
         </div>
       </div>
@@ -120,8 +132,8 @@
   </section>
   <!-- End Carrousel 07 Opciones de nuestra Escuela -->
 
-  <!-- Carrousel 08 - Staff de Profesoras - -->
-  <section id="staff" style="background-image:url({% static 'img/patron_fondo_01.jpg' %}); max-width: 100%; max-height: 100%;">   
+  <!-- Carrousel 08 - Staff de Profesoras - 
+  <section name="staff_doc"  id="staff" style="background-image:url({% static 'img/patron_fondo_01.jpg' %}); max-width: 100%; max-height: 100%;">   
     <div class="container">
       <div class="row" style="height: 70px;">
         <div class="col-md-12">    
@@ -133,7 +145,7 @@
       <div class="row">
        <div class="col-md-12">
         <div class="featured-carousel-08 owl-carousel">
-          <!-- Staff de Docentes - Item 01 -->                
+          <!-- Staff de Docentes - Item 01   -             
           <div class="item">
             <div class="row justify-content-center">
               <div class="col-md-11">
@@ -155,7 +167,7 @@
               </div>
             </div>
           </div>
-          <!-- Staff de Docentes - Item 02 -->             
+          <!-- Staff de Docentes - Item 02            
           <div class="item">
             <div class="row justify-content-center">
               <div class="col-md-11">
@@ -174,7 +186,7 @@
               </div>
             </div>
           </div>
-          <!-- Staff de Docentes - Item 03 -->             
+          <!-- Staff de Docentes - Item 03           
           <div class="item">
             <div class="row justify-content-center">
               <div class="col-md-11">
@@ -193,7 +205,7 @@
               </div>
             </div>
           </div>
-          <!-- Staff de Docentes - End -->             
+          <!-- Staff de Docentes - End            
         </div>
       </div>
      </div>
@@ -201,7 +213,7 @@
   </section>
   <!-- End - Staff de Profesoras - -->
 
-  <!-- Carrousel 01 - Cursos y Talleres - -->
+  <!-- Carrousel 01 - Cursos y Talleres - 
   <section id="cursos-y-talleres" style="max-width: 100%; max-height: 100%;">      
     <div class="row" style="height: 70px;">
       <div class="col-md-12">    
@@ -258,7 +270,7 @@
   </section>  
   <!-- End - Cursos y Talleres - -->  
 
-  <!-- Carrousel 07 Próximas Actividades -->
+  <!-- Carrousel 07 Próximas Actividades 
   <section id="proximas-actividades">      
     <div class="container">
       <div class="row" style="height: 70px;">
@@ -392,7 +404,7 @@
   </section>
   <!-- End Carrousel 07 Próximas Actividades -->
 
-  <!-- Carrousel 03 Nurestro Blog -->
+  <!-- Carrousel 03 Nurestro Blog 
   <section id="nuestro-blog">
 		<div class="container">
       <div class="row" style="height: 70px;">

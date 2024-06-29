@@ -5,12 +5,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Listado de Grupos</h1>
+          <h1 class="m-0">Grupos</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active">Listado de Grupos</li>
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item active">Grupos</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -21,9 +21,15 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <div class="card-header">
-              <!-- <h3 class="card-title">DataTable with default features</h3> -->
-              <a href="{% url 'config:user_groups_new' %}" class="btn btn-app bg-info class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Agregar un NUEVO Grupo""><i class="fas fa-plus-circle"></i>Agregar</a>
+            <div class="card-header" style="height: 70px;;">
+              <!-- Botones para Guardar y Salir sin grabar -->
+              <!--  Boton Agregar -->
+              <a href="{% url 'config:user_groups_new' %}" class="btnfos btnfos-3 text-center"  style="color: #17A2B8;">
+                <i class="fa-solid fa-notes-medical fa-xl" style="color: #17A2B8;"></i>             
+                <!--  <i class="fa-regular fa-circle-xmark fa-lg" style="color: #950202;"></i> -->
+                &nbsp;Agregar
+              </a>                      
+              <!-- End Botones -->
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -31,7 +37,7 @@
                 <thead>
                 <tr>
                   <th>Id</th>
-                  <th>Nombre</th>
+                  <th>Nombre del Grupo</th>
                   <th>Acciones</th>
                 </tr>
                 </thead>

@@ -89,7 +89,10 @@ TEMPLATES = [
         # AL INICIAR UN NUEVO PROYECTO ES IMPORTANTE CAMBIAR ESTOS DATOS
 
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates',
+        '/bases/home.html#staff_doc',                 
+                 ],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -160,8 +163,8 @@ STATICFILES_DIRS = [
 
 ]
 
-MEDIA_ROOT =  (BASE_DIR / '')
-MEDIA_URL = '/'
+MEDIA_ROOT =  (BASE_DIR / 'media')
+MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'

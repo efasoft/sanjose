@@ -1,0 +1,86 @@
+{% extends 'base/index.html' %}
+{% load static %}
+{% block content_wrapper %}
+
+{% endblock %}
+{% block content %}
+
+  <!-- Boton hacia arriba -->
+  <a class="ir-arriba">
+   <span class="fa-stack" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio" >
+     <i class="fa fa-circle fa-stack-2x"></i>
+     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+   </span>
+  </a>
+
+  <!-- Carrousel 03 Nurestro Blog -->
+  <section id="nuestro-blog">
+    <div class="container">
+  <div class="row" style="height: 70px;">
+    <div class="col-md-12">    
+      <div class="desc w-100 text-center" style="margin: 1.55em ">
+        <p class="h3 mb-5 animate__animated animate__zoomInRight animate__slower animate__infinite" style="background-color:#124F51; opacity: .4; color:#FFF">PARTICIPA EN NUESTO BLOG</p>
+      </div>
+    </div>
+  </div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="featured-carousel-03 owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-01.jpg);">
+                                    <div class="text w-100">
+                                        <span class="cat">Web Design</span>
+                                        <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-02.jpg);">
+                                    <div class="text w-100">
+                                        <span class="cat">Web Design</span>
+                                        <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-03.jpg);">
+                                    <div class="text w-100">
+                                        <span class="cat">Web Design</span>
+                                        <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-04.jpg);">
+                                    <div class="text w-100">
+                                        <span class="cat">Web Design</span>
+                                        <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-end justify-content-center" style="background-image:url(static/img/blog-05.jpg);">
+                                    <div class="text w-100">
+                                        <span class="cat">Web Design</span>
+                                        <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Carrousel 03 NUesto Blog -->
+
+{% endblock %}

@@ -24,6 +24,10 @@ urlpatterns = [
     path('users/groups/permission/<int:id_grp>/<int:id_perm>',user_group_permission,name="user_groups_permission"),
     path('users/groups/admin/<int:id_usr>/<int:id_grp>',user_group_add,name="user_groups_admin"),
 
+    path('staff_doc',Home.as_view(template_name='bases/staff_docentes.html'),name='staff_doc_uesj'),
+    path('cursos',Home.as_view(template_name='bases/cursos_y_talleres.html'),name='cursos_y_talleres'),    
+    path('actividades',Home.as_view(template_name='bases/proximas_actividades.html'),name='proximas_actividades'),   
+    path('nuestro_blog',Home.as_view(template_name='bases/nuestro_blog.html'),name='nuestro_blog'),       
     path('catalogos/categorias',
 	 Home.as_view(),
 	 name='categorias'),

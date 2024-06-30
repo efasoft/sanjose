@@ -1,3 +1,5 @@
+<div style="background-color:#04D5DF">
+
 <h2 align="left">Hola 👋! Mi nombre es Ernesto Fernández, soy Desarrollador desde 1987.</h2>
 <h3 align="center">Front-End y Back-End</h3>
 
@@ -8,7 +10,7 @@
 
 ###
 
-<img align="right" height="160" src="efa_soft.jpg"  />
+<img align="right" height="140" src="efa_soft.jpg"  />
 
 ###
 
@@ -54,3 +56,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>
 
+</div>

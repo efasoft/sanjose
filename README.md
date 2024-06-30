@@ -1,9 +1,6 @@
 <h2 align="left">Hola👋! Mi nombre es Ernesto Fernández, soy desarrollador desde 1987</h2>
-<h3 align="center">Front-End y Back-End</h3>
 
-- 🔭Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
-![Sistema de Control Educativo](logo.png)
-
+###
 
 <img align="right" height="150" src="https://drive.google.com/file/d/1QHRsJEVh3dMFpCaQNAL2f2s9z0tc1h_a/view?usp=sharing"  />
 
@@ -64,9 +61,3 @@
 </div>
 
 ###
-
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=efasoft&show_icons=true&locale=en&layout=compact" alt="efasoft" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>
-

@@ -1,13 +1,14 @@
 <h2 align="left">Hola 👋! Mi nombre es Ernesto Fernández, soy Desarrollador desde 1987.</h2>
 <h3 align="center">Front-End y Back-End</h3>
 
-- 🔭Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
+- Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
+
 ![Sistema de Control Educativo](logo.png)
 
 
 ###
 
-<img align="right" height="196" src="efa_soft.jpg"  />
+<img align="right" height="160" src="efa_soft.jpg"  />
 
 ###
 

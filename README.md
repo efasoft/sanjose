@@ -1,18 +1,24 @@
 <div align="center">
+
+![Sistema de Control Educativo](ernesto_perfil.png)
+
 <h2 align="center">Hola 👋! Mi nombre es Ernesto Fernández</h2>
 
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
+<img align="center" height="140" src="efa_soft.jpg"  />
+
 </div>
-- Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
+
+![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E)
+
+- Actualmente trabajo migrando un Sistema para una escuela primaria **SIGG-EDU**🐍 
+
 
 ![Sistema de Control Educativo](logo.png)
 
 <h3 align="left">🛠 Lenguajes y Herramientas</h3>
-
-
-<img align="right" height="140" src="efa_soft.jpg"  />
 
 ###
 

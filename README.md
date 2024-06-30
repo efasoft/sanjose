@@ -1,8 +1,10 @@
+<div align="center">
 <h2 align="center">Hola 👋! Mi nombre es Ernesto Fernández</h2>
 
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
-<h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
 
+<h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
+</div>
 - Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
 
 ![Sistema de Control Educativo](logo.png)

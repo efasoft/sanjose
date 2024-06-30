@@ -1,8 +1,8 @@
 <h2 align="left">Hola 👋! Mi nombre es Ernesto Fernández, soy Desarrollador desde 1987.</h2>
 <h3 align="center">Front-End y Back-End</h3>
 
-# ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF
-)
+
+![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 https://img.shields.io/badge/programar%20-%20?style=flat-square&label=Me%20encanta&labelColor=%2320A8AF
 

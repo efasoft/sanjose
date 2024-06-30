@@ -1,14 +1,14 @@
-<div style="background-color:#04D5DF">
-
 <h2 align="left">Hola 👋! Mi nombre es Ernesto Fernández, soy Desarrollador desde 1987.</h2>
 <h3 align="center">Front-End y Back-End</h3>
+https://img.shields.io/badge/programar%20-%20?style=flat-square&label=Me%20encanta&labelColor=%2320A8AF
+
 
 - Actualmente trabajo migrando un Sistema para una escuela primaria # **SIGG-EDU**🐍 
 
 ![Sistema de Control Educativo](logo.png)
 
 <h3 align="left">🛠 Lenguajes y Herramientas</h3>
-###
+
 
 <img align="right" height="140" src="efa_soft.jpg"  />
 
@@ -56,4 +56,3 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>
 
-</div>

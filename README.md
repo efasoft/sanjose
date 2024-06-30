@@ -7,7 +7,7 @@
 
 ![Sistema de Control Educativo](logo.png)
 
-
+<h3 align="left">🛠 Lenguajes y Herramientas</h3>
 ###
 
 <img align="right" height="140" src="efa_soft.jpg"  />
@@ -51,7 +51,7 @@
 </div>
 
 ###
-
+<h3 align="left">🔥  Mis Estadísticas :</h3>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=efasoft&show_icons=true&locale=en&layout=compact" alt="efasoft" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>

@@ -21,19 +21,20 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <div class="card-header" style="height: 70px;;">
+            <div class="card-header btn-4" style="height: 70px;;">
               <!-- Botones para Guardar y Salir sin grabar -->
               <!--  Boton Agregar -->
-              <a href="{% url 'config:user_groups_new' %}" class="btnfos btnfos-3 text-center"  style="color: #17A2B8;">
+
+              <a href="{% url 'config:user_groups_new' %}" >
                 <i class="fa-solid fa-notes-medical fa-xl" style="color: #17A2B8;"></i>             
-                <!--  <i class="fa-regular fa-circle-xmark fa-lg" style="color: #950202;"></i> -->
                 &nbsp;Agregar
-              </a>                      
+              </a>  
+
               <!-- End Botones -->
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="tbl" class="table table-bordered table-striped">
+              <table id="tbl" class="table table-bordered table-striped table-hover table-sm table-hover-bg-warning">
                 <thead>
                 <tr>
                   <th>Id</th>

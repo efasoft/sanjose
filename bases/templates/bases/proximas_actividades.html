@@ -5,32 +5,33 @@
 {% endblock %}
 {% block content %}
   <!-- Carrousel 07 Próximas Actividades -->
-  <section id="PROXIMAS-ACTIVIDADES" style="background-image:url({% static 'img/patron_fondo_02.jpg' %}); max-width: 100%; max-height: 100%;">     
-    <div class="container" >
+  <section  id="PROXIMAS-ACTIVIDADES" style="background-image:url({% static 'img/patron_fondo_02.jpg' %});">     
+    <div class="container p-1" >
       <div class="row" >
         <div class="col-md-12 c-degra-actividades" style="height: 55px;">    
-              <p class="h3 text-center animate__animated animate__fadeInUp animate__slower animate__infinite" style="opacity: .4; color:#FFF;margin: 0.20em;">PRÓXIMAS ACTIVIDADES</p>
+              <p class="h3 text-center animate__animated animate__fadeInUp animate__slower animate__repeat-2" style="opacity: .4; color:#FFF;margin: 0.20em;">PRÓXIMAS ACTIVIDADES</p>
         </div>
-      </div> 
-   
-      <div class="row">
-        <div class="col-md-12">
+
+        <div class="col-md-12 ms-0">
+
           <div class="featured-carousel owl-carousel">
             <div class="item">
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-01.jpg' %});" >
                   <div class="meta-date text-center p-2">
-                    <span class="day">26</span>
+                    <span class="day">01</span>
                     <span class="mos">Jun.</span>
                     <span class="yr">2024</span>
                   </div>                 
                 </a>
-                <div class="text border border-top-0 p-4">
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-warinig">
                   <h3 class="heading"><a href="#staff">Fin de Curso</a></h3>
-                  <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela. Ven y participa Ven y participa Ven y participa</p> 
+                  <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela. Ven y participa</p> 
                   <div class="d-flex align-items-center mt-4">
                         <p class="mb-0"><a href="#staff" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
+                </blockquote>                  
                 </div>
               </div>
             </div>
@@ -39,17 +40,19 @@
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-02.jpg' %});">
                   <div class="meta-date text-center p-2">
-                    <span class="day">12</span>
+                    <span class="day">02</span>
                     <span class="mos">Jun.</span>
                     <span class="yr">2024</span>
                   </div>  
                 </a>
-                <div class="text border border-top-0 p-4">
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-info">
                   <h3 class="heading"><a href="cursos-y-talleres">Presentacion 4to. Grado</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
                   <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#cursos-y-talleres" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
+                </blockquote>                  
                 </div>
               </div>
             </div>
@@ -58,17 +61,19 @@
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-03.jpg' %});">
                   <div class="meta-date text-center p-2">
-                    <span class="day">31</span>
+                    <span class="day">03</span>
                     <span class="mos">Jul.</span>
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="text border border-top-0 p-4">
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-success">
                   <h3 class="heading"><a href="#">Cumple Rodri</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
+                </blockquote>                  
                 </div>
               </div>
             </div>
@@ -77,18 +82,20 @@
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-04.jpg' %});">
                   <div class="meta-date text-center p-2">
-                    <span class="day">15</span>
+                    <span class="day">04</span>
                     <span class="mos">Jul.</span>
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="text border border-top-0 p-4">
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-fuchsia">
                   <h3 class="heading"><a href="#">Tía Beba</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
                   <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
                   </div>
-                  </div>
+                </blockquote>                      
+                </div>
               </div>
             </div>
 
@@ -96,17 +103,19 @@
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-05.jpg' %});">
                   <div class="meta-date text-center p-2">
-                    <span class="day">15</span>
+                    <span class="day">05</span>
                     <span class="mos">Jul.</span>
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="text border border-top-0 p-4">
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-purple">
                   <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
-                  </div>
+                   </div>
+                  </blockquote>                      
                 </div>
               </div>
             </div>
@@ -115,24 +124,27 @@
               <div class="blog-entry">
                 <a href="#" class="block-20 d-flex align-items-start" style="background-image:url({% static 'img/actividad-06.jpg' %});">
                   <div class="meta-date text-center p-2">
-                    <span class="day">15</span>
+                    <span class="day">06</span>
                     <span class="mos">Jul.</span>
                     <span class="yr">2024</span>
                   </div> 
-                </a>
-                <div class="text border border-top-0 p-4">
+                </a>            
+                <div class="card-body clearfix p-1">
+                  <blockquote class="quote-orange">
                   <h3 class="heading"><a href="#">Contáctanos</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
                    <div class="d-flex align-items-center mt-4">
                     <p class="mb-0"><a href="#" class="btn btn-primary">Leer más <span class="ion-ios-arrow-round-forward"></span></a></p>
-                  </div>
-                  </div>
+                   </div>
+                  </blockquote>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
     </div>
   </section>
   <!-- End Carrousel 07 Próximas Actividades --> 

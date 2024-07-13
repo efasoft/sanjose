@@ -9,42 +9,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SIGG-EDU</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons
-  <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}">     
-  -->
+  <!-- Font Awesome Icons  -->
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free-6/css/fontawesome.css' %}">
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free-6/css/brands.css' %}">  
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free-6/css/solid.css' %}">   
+  <!-- SweetAlert2 
+  <link rel="stylesheet" href="{% static 'plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css' %}"> -->
 
-  <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="{% static 'plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css' %}">
+  <!-- SweetAlert2 2024 -->
+  <link rel="stylesheet" href="{% static 'plugins/sweetalert2/sweetalert2.min.css' %}"> 
+
   <!-- Toastr -->
   <link rel="stylesheet" href="{% static 'plugins/toastr/toastr.min.css' %}">  
   <!-- DataTables -->
   <link rel="stylesheet" href="{% static 'plugins/datatables-bs4/css/dataTables.bootstrap4.min.css' %}">
   <link rel="stylesheet" href="{% static 'plugins/datatables-responsive/css/responsive.bootstrap4.min.css' %}">
   <link rel="stylesheet" href="{% static 'plugins/datatables-buttons/css/buttons.bootstrap4.min.css' %}">  
-  <!-- Theme style -->
+  <!-- Theme style AdminLite -->
   <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
 
-  <!-- Materialize 1.0.0 
-  <link rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">   
--->
   <!-- Efasoft style -->
   <link rel="stylesheet" href="{% static 'efasoft/efasoft.css' %}">     
 
   <!-- Carrousel 01 Cursos y Talleres -->
   <link rel="stylesheet" href="{% static 'efasoft/owl.carousel.min.css' %}">    
   <link rel="stylesheet" href="{% static 'efasoft/owl.theme.default.min.css' %}">  
-  <link rel="stylesheet" href="{% static 'efasoft/style_car_01.css' %}"> 
+  <link rel="stylesheet" href="{% static 'efasoft/style_car_01.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
   <!-- Carrousel 08 Staff de Profesoras -->
-  <link rel="stylesheet" href="{% static 'efasoft/style_car_08.css' %}">  
-  <link rel="stylesheet" href="{% static 'efasoft/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'efasoft/style_car_08.css' %}">   
+
 
   <!-- Carrousel 07 Opciones de nuestra Escuela -->
    <link rel="stylesheet" href="{% static 'efasoft/style_car_07.css' %}"> 
@@ -60,22 +60,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 </head>
 
-<body class="hold-transition sidebar-mini  layout-navbar-fixed">
+<body class="hold-transition sidebar-mini layout-fixed  layout-navbar-fixed layout-footer-fixed">
 
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light  shadow">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" data-accordion="true" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a class="nav-link"  href="/" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio">
+        <a class="nav-link"  href="/" role="button" data-bs-toggle="tooltip" data-bs-placement="auto" title="Inicio" data-bs-customClass="tooltip-background">
           <i class="fa-solid fa-house"></i>
         </a>
-      </li>       
+      </li>    
       <li class="nav-item d-none d-sm-inline-block">
         <a class="nav-link"  href="#" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Escribenos">
           <i class="fa-solid fa-envelope"></i>
@@ -151,8 +151,587 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
      
         <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
-          <!-- OPCIONES PARA TODO EL PUBLICO  -->    
+          <!-- MENÚ DE OPCIONES -->           
+          {% if user.is_active %}
+          <!-- OPCIONES PARA USUARIOS REGISTRADOS   -->    
+          <!-- DIRECTORIO  -->          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa-solid fa-users-gear"></i>
+              <p>
+                Directorio
+                <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:10px;"></i>
+              </p>
+            </a> 
+            <!-- CATALOGOS    -->
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color:#FFF;">
+                  <i class="fa-regular fa-swatchbook"></i>
+                  <p><small>&nbsp;Catálogos</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes</small></p>
+                    </a>
+                  </li>
 
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Personal Doc. Adm. y Obr.</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Actualización de Sueldos.</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Actualización de Primas</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Cargos del Personal</small></p>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li> 
+              <!-- CATALOGOS - OTROS   -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-regular fa-swatchbook"></i>
+                  <p><small>&nbsp;Catálogos adicionales</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Ciudades</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Entidades Bancarias</small></p>
+                    </a>
+                  </li> 
+                 
+                </ul>
+              </li> 
+              <!-- TRANSACCIONES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <p><small>&nbsp;Transacciones</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Registro de calificación Final</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Carta de Buena Conducta 6º</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    {% if perms.directorio.view_situacion%}
+                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
+                      <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
+                    </a>
+                    {% endif %}
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Pasar alumnos de un grado a otro</small></p>
+                    </a>
+                  </li> 
+
+                 
+                  
+                </ul>
+              </li>       
+              <!-- REPORTES DE REPRESENTANTES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-print"></i>
+                  <p><small>&nbsp;Reportes de Representantes</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes por Grado y Sección</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
+                      <p><small>&nbsp;Representantes e Hijos</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Carta de Morosidad</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Pagos por Inscripción - Total</small></p>
+                    </a>
+                  </li>    
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Diferencia en Mensualidades</small></p>
+                    </a>
+                  </li>                  
+                  
+                </ul>
+              </li>   
+              <!-- REPORTES DE ALUMNOS    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-print"></i>
+                  <p><small>&nbsp;Reportes de Alumnos</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Alumnos</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Repitientes</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
+                      <p><small>&nbsp;Calificaciones</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Cédula Escolar</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Hoja de Trabajo</small></p>
+                    </a>
+                  </li>    
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Control de Retardos</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Cuaderno de Nómina</small></p>
+                    </a>
+                  </li>  
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Constancias de Estudios</small></p>
+                    </a>
+                  </li>      
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Constancias de Inscripción</small></p>
+                    </a>
+                  </li>      
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Carnets</small></p>
+                    </a>
+                  </li>   
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Total Alumnos - Resumen</small></p>
+                    </a>
+                  </li>                   
+                  
+                  
+                </ul>
+              </li>      
+              <!-- REPORTES DE PERSONAL    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-print"></i>
+                  <p><small>&nbsp;Reportes de Personal</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Control de Inasistencias</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Hoja de Trabajo</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
+                      <p><small>&nbsp;Relación de Personals</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Constancias de Trabajo</small></p>
+                    </a>
+                  </li> 
+
+   
+                </ul>
+              </li>   
+              <!-- REPORTES DE AVEC    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-print"></i>
+                  <p><small>&nbsp;Reportes de Avec</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Mensualidades por Grado</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Mensualidades por Sexo</small></p>
+                    </a>
+                  </li>                  
+   
+                </ul>
+              </li>                           
+              <!-- DEFINICIONES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p><small>&nbsp;Definiciones</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Colaboración por Inscripción</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Meses del año Escolar</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    {% if perms.directorio.view_situacion%}
+                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
+                      <p><small>&nbsp;Condición - Representantes</small></p>
+                    </a>
+                    {% endif %}
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Condición - Alumnos</small></p>
+                    </a>
+                  </li> 
+
+                 
+                  
+                </ul>
+              </li>               
+            </ul>
+          </li>
+          <!-- End DIRECTORIO    --> 
+          <!-- CUENTAS POR COBRAR  -->          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa-solid fa-coins"></i>
+              <p>
+                Cuentas por Cobrar
+                <i class="fa-solid fa-chevron-right right"></i>
+              </p>
+            </a> 
+            <!-- CATALOGOS CxC   -->
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color:#FFF;">
+                  <i class="fa-regular fa-swatchbook"></i>
+                  <p><small>&nbsp;Catálogos</small>
+                    <i class="fa-solid fa-chevron-right right" ></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Personal Doc. Adm. y Obr.</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Actualización de Sueldos.</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Actualización de Primas</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Cargos del Personal</small></p>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li> 
+              <!-- TRANSACCIONES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <p><small>&nbsp;Transacciones</small>
+                    <i class="fa-solid fa-chevron-right right"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Registro de calificación Final</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Carta de Buena Conducta 6º</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    {% if perms.directorio.view_situacion%}
+                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
+                      <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
+                    </a>
+                    {% endif %}
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Pasar alumnos de un grado a otro</small></p>
+                    </a>
+                  </li> 
+
+                 
+                  
+                </ul>
+              </li>       
+              <!-- REPORTES DE REPRESENTANTES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-print"></i>
+                  <p><small>&nbsp;Reportes de Representantes</small>
+                    <i class="fa-solid fa-chevron-right right"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Representantes por Grado y Sección</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
+                      <p><small>&nbsp;Representantes e Hijos</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Carta de Morosidad</small></p>
+                    </a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Pagos por Inscripción - Total</small></p>
+                    </a>
+                  </li>    
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Diferencia en Mensualidades</small></p>
+                    </a>
+                  </li>                  
+                  
+                </ul>
+              </li>   
+              <!-- DEFINICIONES    -->
+              <li class="nav-item">
+                <a href="#" class="nav-link"  style="color:#FFF;">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p><small>&nbsp;Definiciones</small>
+                    <i class="fa-solid fa-chevron-right right"></i>  
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Colaboración por Inscripción</small></p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Meses del año Escolar</small></p>
+                    </a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    {% if perms.directorio.view_situacion%}
+                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
+                      <p><small>&nbsp;Condición - Representantes</small></p>
+                    </a>
+                    {% endif %}
+                  </li> 
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Condición - Alumnos</small></p>
+                    </a>
+                  </li> 
+
+                 
+                  
+                </ul>
+              </li>               
+            </ul>
+          </li>
+          <!-- End DIRECTORIO    -->    
+          <!-- End OPCIONES PARA USUARIOS REGISTRADOS   -->  
+          {% else %}   
+          <!-- OPCIONES PARA TODO EL PUBLICO  -->    
           <!-- NUESTRA ESCUELA  -->   
           <li class="nav-item">
             <a href="{% url 'config:home' %}" class="nav-link">
@@ -213,742 +792,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
           <!-- End GALERIA DE FOTOS  -->    
-                                                
           <!--End OPCIONES PARA TODO EL PUBLICO  -->   
-
-          <!-- OPCIONES PARA USUARIOS REGISTRADOS   -->              
-          {% if user.is_active %}
-          <!-- DIRECTORIO  -->          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa-solid fa-users-gear"></i>
-              <p>
-                Directorio
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a> 
-            <!-- CATALOGOS    -->
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link" style="color:#FFF;">
-                  <i class="fa-regular fa-swatchbook"></i>
-                  <p><small>&nbsp;Catálogos</small>
-                    <i class="fas fa-angle-left right" ></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Personal Doc. Adm. y Obr.</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Sueldos.</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Primas</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cargos del Personal</small></p>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </li> 
-              <!-- CATALOGOS - OTROS   -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-regular fa-swatchbook"></i>
-                  <p><small>&nbsp;Catálogos adicionales</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Ciudades</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Entidades Bancarias</small></p>
-                    </a>
-                  </li> 
-                 
-                </ul>
-              </li> 
-              <!-- TRANSACCIONES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <p><small>&nbsp;Transacciones</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Registro de calificación Final</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Buena Conducta 6º</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pasar alumnos de un grado a otro</small></p>
-                    </a>
-                  </li> 
-
-                 
-                  
-                </ul>
-              </li>       
-              <!-- REPORTES DE REPRESENTANTES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Representantes</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes por Grado y Sección</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Representantes e Hijos</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Morosidad</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pagos por Inscripción - Total</small></p>
-                    </a>
-                  </li>    
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Diferencia en Mensualidades</small></p>
-                    </a>
-                  </li>                  
-                  
-                </ul>
-              </li>   
-              <!-- REPORTES DE ALUMNOS    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Alumnos</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Alumnos</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Repitientes</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Calificaciones</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cédula Escolar</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Hoja de Trabajo</small></p>
-                    </a>
-                  </li>    
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Control de Retardos</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cuaderno de Nómina</small></p>
-                    </a>
-                  </li>  
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Estudios</small></p>
-                    </a>
-                  </li>      
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Inscripción</small></p>
-                    </a>
-                  </li>      
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carnets</small></p>
-                    </a>
-                  </li>   
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Total Alumnos - Resumen</small></p>
-                    </a>
-                  </li>                   
-                  
-                  
-                </ul>
-              </li>      
-              <!-- REPORTES DE PERSONAL    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Personal</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Control de Inasistencias</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Hoja de Trabajo</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Relación de Personals</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Trabajo</small></p>
-                    </a>
-                  </li> 
-
-   
-                </ul>
-              </li>   
-              <!-- REPORTES DE AVEC    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Avec</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Mensualidades por Grado</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Mensualidades por Sexo</small></p>
-                    </a>
-                  </li>                  
-   
-                </ul>
-              </li>                           
-              <!-- DEFINICIONES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-screwdriver-wrench"></i>
-                  <p><small>&nbsp;Definiciones</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Colaboración por Inscripción</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Meses del año Escolar</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Condición - Representantes</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Condición - Alumnos</small></p>
-                    </a>
-                  </li> 
-
-                 
-                  
-                </ul>
-              </li>               
-            </ul>
-          </li>
-          <!-- End DIRECTORIO    --> 
-          <!-- CUENTAS POR COBRAR  -->          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa-solid fa-coins"></i>
-              <p>
-                Cuentas por Cobrar
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a> 
-            <!-- TRANSACCIONES    -->
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link" style="color:#FFF;">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <p><small>&nbsp;Transacciones</small>
-                    <i class="fas fa-angle-left right" ></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Personal Doc. Adm. y Obr.</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Sueldos.</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Primas</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cargos del Personal</small></p>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </li> 
-              <!-- TRANSACCIONES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <p><small>&nbsp;Transacciones</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Registro de calificación Final</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Buena Conducta 6º</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pasar alumnos de un grado a otro</small></p>
-                    </a>
-                  </li> 
-
-                 
-                  
-                </ul>
-              </li>       
-              <!-- REPORTES DE REPRESENTANTES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Representantes</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes por Grado y Sección</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Representantes e Hijos</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Morosidad</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pagos por Inscripción - Total</small></p>
-                    </a>
-                  </li>    
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Diferencia en Mensualidades</small></p>
-                    </a>
-                  </li>                  
-                  
-                </ul>
-              </li>   
-              <!-- REPORTES DE ALUMNOS    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Alumnos</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Alumnos</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Repitientes</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Calificaciones</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cédula Escolar</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Hoja de Trabajo</small></p>
-                    </a>
-                  </li>    
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Control de Retardos</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cuaderno de Nómina</small></p>
-                    </a>
-                  </li>  
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Estudios</small></p>
-                    </a>
-                  </li>      
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Inscripción</small></p>
-                    </a>
-                  </li>      
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carnets</small></p>
-                    </a>
-                  </li>   
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Total Alumnos - Resumen</small></p>
-                    </a>
-                  </li>                   
-                  
-                  
-                </ul>
-              </li>      
-              <!-- REPORTES DE PERSONAL    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Personal</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Control de Inasistencias</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Hoja de Trabajo</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Relación de Personals</small></p>
-                    </a>
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Constancias de Trabajo</small></p>
-                    </a>
-                  </li> 
-
-   
-                </ul>
-              </li>   
-              <!-- REPORTES DE AVEC    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Avec</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Mensualidades por Grado</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Mensualidades por Sexo</small></p>
-                    </a>
-                  </li>                  
-   
-                </ul>
-              </li>                           
-              <!-- DEFINICIONES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-screwdriver-wrench"></i>
-                  <p><small>&nbsp;Definiciones</small>
-                    <i class="fas fa-angle-left right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Colaboración por Inscripción</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Meses del año Escolar</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Condición - Representantes</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Condición - Alumnos</small></p>
-                    </a>
-                  </li> 
-
-                 
-                  
-                </ul>
-              </li>               
-            </ul>
-          </li>
-          <!-- End DIRECTORIO    -->     
           {% endif %}           
-          <!-- End OPCIONES PARA USUARIOS REGISTRADOS   -->            
+          <!-- End MENÚ DE OPCIONES -->           
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -1018,9 +864,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     </div>
     <!-- Default to the left -->
-    <small><strong>Copyright &copy; 2024 </strong></small>   
+    <small><strong>Desarrollo Web </strong></small>   
     <img src="{% static 'img/efa_soft.jpg' %}" alt="EFA Soft" height="27" width="50" > 
-    </strong> <small><strong>All rights reserved.</strong></small>  
+    </strong> <small><strong>Copyright &copy; 2024 </strong></small>  
   </footer>
   {% endblock footer %}  
 </div>
@@ -1028,9 +874,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
-<!-- Bootstrap 4 -->
+<!-- jQuery  Necesarios para los menus de AdminLite  y Slider --> 
+<script src="{% static 'plugins/jquery/jquery.min.js' %}"></script> 
+
+<!-- Bootstrap 4  -->
 <script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 <!-- SweetAlert2 -->
 <script src="{% static 'plugins/sweetalert2/sweetalert2.min.js' %}"></script>
@@ -1041,21 +888,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{% static 'plugins/datatables-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
 <script src="{% static 'plugins/datatables-responsive/js/dataTables.responsive.min.js' %}"></script>
 <script src="{% static 'plugins/datatables-responsive/js/responsive.bootstrap4.min.js' %}"></script>
-<script src="{% static 'plugins/datatables-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'plugins/datatables-buttons/js/dataTables.buttons.min.js' %}"></script> 
 <script src="{% static 'plugins/datatables-buttons/js/buttons.bootstrap4.min.js' %}"></script>
-<script src="{% static 'plugins/jszip/jszip.min.js' %}"></script>
-<script src="{% static 'plugins/pdfmake/pdfmake.min.js' %}"></script>
-<script src="{% static 'plugins/pdfmake/vfs_fonts.js' %}"></script>
 <script src="{% static 'plugins/datatables-buttons/js/buttons.html5.min.js' %}"></script>
 <script src="{% static 'plugins/datatables-buttons/js/buttons.print.min.js' %}"></script>
 <script src="{% static 'plugins/datatables-buttons/js/buttons.colVis.min.js' %}"></script>
 
+<script src="{% static 'plugins/jszip/jszip.min.js' %}"></script>
+<script src="{% static 'plugins/pdfmake/pdfmake.min.js' %}"></script>
+<script src="{% static 'plugins/pdfmake/vfs_fonts.js' %}"></script>
+
+
 <!-- AdminLTE App -->
 <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
 
-<!-- Materialize 1.0.0 
-<link rel="stylesheet" href="{% static 'materialize/js/materialize.min.js' %}">   
--->
 <!-- Carrousel 01 Cursos y Talleres -->
 <script src="{% static 'efasoft/js/popper.js' %}"></script>
 <script src="{% static 'efasoft/js/owl.carousel.min.js' %}"></script>
@@ -1073,7 +919,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- BootSptrap 5.3.3 
 <script src="{% static 'bootstrap-5.3.3-dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js' %}"></script>
 -->
+
 <script>
 
   $(document).ready(function(){ irArriba(); }); //Hacia arriba
@@ -1085,7 +933,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     });
     $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
   }
-
 
   $("#btnLogout").click(function(e){
     Swal.fire({
@@ -1160,6 +1007,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       })
   }, false);
 
+ 
+
+
+
+
+
   $("#btnEnviarDatos").click(function(e)
   {
    let enviodatos = document.getElementById('mis_datos');
@@ -1171,11 +1024,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
       title: "¿Borrar?",
       text : `Se borrará ${desc}`,
       icon:"question",
+ 
       showCancelButton: true,
+      cancelButtonColor: "#17A2B8",        
       confirmButtonText: `Si, Borrar`,
       cancelButtonText: `No borrar`,
       allowOutsideClick:false,
       confirmButtonClass: 'btn btn-danger',
+      cancelButtonClass: 'btn btn-info',      
+      reverseButtons: true,
+      showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInDown
+          animate__faster
+        `
+      },
+      hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutDown
+          animate__faster
+        `
+      }
+
+
+
+
     }).then((borrar) => {
       console.log(borrar)
       if(borrar.isConfirmed){

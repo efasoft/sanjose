@@ -48,8 +48,8 @@
                         <td>{{item.id}}</td>
                         <td>{{item.name}}</td>
                         <td>
-                            <a href="{% url 'config:user_groups_modify'  item.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Edtar""><i class="fa fa-edit"></i></a>
-                            <button type="button" class="btn btn-sm text-danger class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Eliminar""
+                            <a href="{% url 'config:user_groups_modify'  item.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edtar""><i class="fa fa-edit"></i></a>
+                            <button type="button" class="btn btn-sm text-danger class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Eliminar""
                             onclick='return abrir_borrar("{{item.name}}","{% url 'config:user_groups_delete' item.id%}")'><i class="far fa-trash-alt"></i></button>
                         </td>
                     </tr>

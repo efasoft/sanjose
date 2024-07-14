@@ -494,6 +494,43 @@ button-datos:hover:before,button-datos:hover:after{
 
 /* End Boton Nuevo Registro */
 
+/* Tooltip Personalizacion */
+
+  .tooltip-custom .tooltip-inner {
+    opacity: .85;  
+    background-color: #801515 !important;
+    color:#FFF;
+
+  }
+
+  .bs-tooltip-top .arrow::before,
+  .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    opacity: .85;      
+    border-top-color: #801515 !important;
+  }
+
+  .bs-tooltip-right .arrow::before,
+  .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    opacity: .85;      
+    border-right-color: #801515 !important;
+  }
+  .bs-tooltip-bottom .arrow::before,
+  .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    opacity: .85;      
+    border-bottom-color: #801515 !important;
+  }
+
+  .bs-tooltip-left .arrow::before,
+  .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    opacity: .85;      
+    border-left-color: #801515 !important;
+  }
+
+/* End Tooltip Personalizacion */
+
+
+
+
 
 /* Nuevo formato de INPUT */
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); 

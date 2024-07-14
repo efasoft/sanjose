@@ -50,7 +50,7 @@
                   <td>{{i.get_full_name}}</td>
                   <td>
                     {% if not i.is_staff %}
-                    <a href="{% url 'config:user_modify' i.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Editar""><i class="fa fa-edit"></i></a>
+                    <a href="{% url 'config:user_modify' i.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar""><i class="fa fa-edit"></i></a>
                     {% elif user.is_staff %}
                     <a href="{% url 'config:user_modify' i.id %}" class="btn btn-sm text-success"><i class="fa fa-edit"></i></a>
                     {% endif %}

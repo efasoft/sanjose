@@ -1,7 +1,8 @@
 <div align="center">
-```bash
-<h2 align="center">Hola, soyes Ernesto Fernández</h2>
-```
+``
+<h2 align="center">Hola, soy Ernesto Fernández</h2>
+``
+
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
@@ -23,7 +24,7 @@
 
 
 - **Lenguajes y Herramientas**
-
+> 
 ###
 
 <div align="left">
@@ -64,6 +65,7 @@
 
 ###
 - **Mis Estadísticas**
+> 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=efasoft&show_icons=true&locale=en&layout=compact" alt="efasoft" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>

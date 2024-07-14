@@ -1,8 +1,10 @@
 <div align="center">
 
-"
+~~~
+
 <h2 align="center">Hola, soy Ernesto Fernández</h2>
-"
+
+~~~
 
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
@@ -29,8 +31,6 @@
 ###
 
 <div align="left">
-
-> 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="30" alt="django logo"  />
@@ -56,8 +56,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" height="30" alt="heroku logo"  />
-
-.
 </div>
 
 ###
@@ -71,8 +69,6 @@
 
 ###
 - **Mis Estadísticas**
-> 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=efasoft&show_icons=true&locale=en&layout=compact" alt="efasoft" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>
-.

@@ -1,7 +1,7 @@
 <div align="center">
-`#000`
-<h2 align="center">Hola 👋! Mi nombre es Ernesto Fernández</h2>
-
+```bash
+<h2 align="center">Hola, soyes Ernesto Fernández</h2>
+```
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
@@ -13,16 +13,16 @@
 ![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E)
 
 > Actualmente trabajo migrando un Sistema Administrativo para una escuela primaria.
-<h3 align="center">**SIGG-EDU**</h3>
+<h3 align="center">SIGG-EDU</h3>
 
 ![Sistema de Control Educativo](logo.png)
 
-- **Simple to Start**
+- **Nuestro Objetivo**
 
-> Este sistema esta orientado para llevar el control de Alumnos, Representantes, Personal Docente, Administrativo y Obrero. Entre los puntos mas importantes, el sistema permitira brindar información detallada de la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Asimismo la asignación de trabajos, actividades que seran accesibkles a los representantes.
+> Este sistema permitira llevar el control de Alumnos, Representantes, Personal Docente, Administrativo y Obrero. Entre los puntos mas importantes, el sistema brindara información detallada de la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Asimismo la asignación de trabajos, actividades que seran accesibles a los representantes.
 
 
-<h3 align="left">🛠 Lenguajes y Herramientas</h3>
+- **Lenguajes y Herramientas**
 
 ###
 
@@ -63,7 +63,7 @@
 </div>
 
 ###
-<h3 align="left">🔥  Mis Estadísticas :</h3>
+- **Mis Estadísticas**
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=efasoft&show_icons=true&locale=en&layout=compact" alt="efasoft" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=efasoft&show_icons=true&locale=en" alt="efasoft" /></p>

@@ -12,13 +12,14 @@
 
 ![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E)
 
-- Actualmente trabajo migrando un Sistema para una escuela primaria **SIGG-EDU**🐍 
+> Actualmente trabajo migrando un Sistema Administrativo para una escuela primaria.
+<h3 align="center">**SIGG-EDU**</h3>
 
 ![Sistema de Control Educativo](logo.png)
 
 - **Simple to Start**
 
-> Docusaurus is built in a way so that it can [get running](https://docusaurus.io/docs/installation) in as little time as possible. We've built Docusaurus to handle the website build process so you can focus on your project.
+> Este sistema esta orientado para llevar el control de Alumnos, Representantes, Personal Docente, Administrativo y Obrero. Entre los puntos mas importantes, el sistema permitira brindar información detallada de la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Asimismo la asignación de trabajos, actividades que seran accesibkles a los representantes.
 
 
 <h3 align="left">🛠 Lenguajes y Herramientas</h3>

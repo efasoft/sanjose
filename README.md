@@ -11,10 +11,10 @@
 </div>
 
 
-![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E) ###### 16/07/2024
+![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E) última actualización: 16/07/2024
 
 
-> Actualmente trabajo migrando un Sistema Administrativo para una escuela primaria.
+> Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 <h3 align="center">SIGG-EDU</h3>
 
 ![Sistema de Control Educativo](logo.png)

@@ -15,9 +15,17 @@
 
 
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
-<h3 align="center">SIGG-EDU</h3>
 
-![Sistema de Control Educativo](logo.png)
+![Sistema de Control Educativo](sigg_edu.png)
+
+<h3 align="center">VERSION BAJO DOS</h3>
+
+![Sistema de Control Educativo DOS](sigg_dos.png)
+
+
+<h3 align="center">VERSION WEB</h3>
+
+![Sistema de Control Educativo Web](sigg_web.png)
 
 - **Nuestro Objetivo**
 

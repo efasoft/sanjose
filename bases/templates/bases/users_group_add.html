@@ -12,20 +12,41 @@
       <div class="callout callout-success bg-white shadow-sm">
         <form method="POST" id="mis_datos" class="form-group mb-0 pb-0">
           {% csrf_token %}
-<!--          
+          <div class="row pl-2 pr-2">
+            <div class="form-group input-f-Container col-12">
+              <input type="text" class="input-f" id="name" name="name" placeholder="a"
+              value="{{obj.name}}" required >
+              <label for="" class="label-f">Nombre del Grupo</label>
+            </div>
+          </div>
+          <!--          
           <div class="form-group">
             <label for="exampleInputEmail1">Nombre del Grupo</label>
             <input type="text" required class="form-control" id="name" name="name" placeholder="Nombre del Grupo" 
             value="{{obj.name}}">
           </div>
--->
-          <div class="form-group input-f-Container col-12">
-            <input type="text" class="input-f" id="name" name="name" placeholder="a"
-            value="{{obj.name}}" required>
-            <label for="" class="label-f">Nombre del Grupo</label>
+          -->           
+          <!-- 
+          <div class="row pl-2 pr-2">
+            <div class="form-group input-f-Container col-6">
+              <input type="text" class="input-f" id="name" name="name" placeholder="a"
+              value="{{obj.name}}" required >
+              <label for="" class="label-f">Nombre del Grupo</label>
+            </div>
+
+            <div class="form-group input-f-Container col-3">
+              <input type="text" class="input-f" id="name-02" name="name-02" placeholder="a"
+               required>
+              <label for="" class="label-f">Direccion</label>
+            </div>  
+
+            <div class="form-group input-f-Container col-3">
+              <input type="text" class="input-f" id="name-03" name="name-03" placeholder="a"
+               required>
+              <label for="" class="label-f">Referencia</label>
+            </div>          
           </div>
-
-
+          -->         
           <!-- Botones para Guardar y Salir sin grabar -->
           <section class="buttons-datos">
             <!--  Boton Grabar -->
@@ -51,6 +72,8 @@
     </div>
   </div>
 </div>
+<!-- End Datos Generales -->
+<!--Pernmisos -->
 {% if obj %}
 <div class="row">
   <div class="col-6">

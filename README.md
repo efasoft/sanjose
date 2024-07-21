@@ -38,7 +38,7 @@
 
 - **Nuestro Objetivo**
 
-> Este sistema permitira llevar el control de Alumnos, Representantes, Personal Docente, Administrativo y Obrero. Entre los puntos mas importantes, el sistema brindara información detallada de la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Asimismo la asignación de trabajos, actividades que seran accesibles a los representantes.
+> El sistema esta orientado a mejorar el acceso a la información de cada alumno, permitiendo la participación de los representantes y de todo el personal Directivo, Docente y Administrativo de la escuela. Para ello se podra contar con datos reales sobre la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Los represeantes tendran conocimiento de los trabajos asiganados a los alumnos, conoceran las proximas actividades que se llevaran a cabo en la escuela, podran interactuar con nuestro blog y dejar sus comentarios. La plataforma servira como espacio informativo para todas aquellas personas que quieran conocer sobre la escuela, como para aquellas personas que tengan a sus hijos cursando algun año escolar.
 
 
 - **Lenguajes y Herramientas**

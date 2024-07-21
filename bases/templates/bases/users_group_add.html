@@ -4,13 +4,13 @@
 {% endblock %}
 {% block content %}
 <div class="row">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header">
+  <div class="col-12 mt-4">
+    <div class="card-sm">
+      <div class="callout callout-info bg-light shadow-sm"  style="height: 60px;">
         {% if obj %} Editar {% else %} Crear {% endif %} Grupo de Usuario
       </div>
-      <div class="card-body">
-        <form method="POST" id="mis_datos" class="form-group">
+      <div class="callout callout-success bg-white shadow-sm">
+        <form method="POST" id="mis_datos" class="form-group mb-0 pb-0">
           {% csrf_token %}
 <!--          
           <div class="form-group">
@@ -19,7 +19,7 @@
             value="{{obj.name}}">
           </div>
 -->
-          <div class="form-group input-f-Container">
+          <div class="form-group input-f-Container col-12">
             <input type="text" class="input-f" id="name" name="name" placeholder="a"
             value="{{obj.name}}" required>
             <label for="" class="label-f">Nombre del Grupo</label>

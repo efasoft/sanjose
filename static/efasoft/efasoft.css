@@ -121,7 +121,7 @@ div.c-degra-actividades{
 }
 
 .btnfos {
-  color: #fff;
+  color: #FF5733;
   cursor: pointer;
   display: block;
   font-size: 12px;
@@ -220,7 +220,7 @@ div.c-degra-actividades{
 .btnfos-2:hover::before {
   bottom: auto;
   top: 0;
-  width: 75%;
+  width: 85%;
 }
 /*Boton Agregar */ 
 .btnfos-3{
@@ -238,6 +238,7 @@ div.c-degra-actividades{
           backface-visibility: hidden;
   border: 1px solid rgba(255, 255, 255, 0);
   bottom: 0px;
+  color: #FF5733;  
   content: " ";
   display: block;
   margin: 0 auto;
@@ -252,16 +253,18 @@ div.c-degra-actividades{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-color: #17A2B8;
+  color: #FF5733;
   -webkit-transition: width 350ms ease-in-out;
           transition: width 350ms ease-in-out;
   width: 85%;
 }
 
 .btnfos-3:hover::before {
+  color: #FF5733;  
   bottom: auto;
   top: 0;
   width: 85%;
-}
+} 
 
 /* Nuevo Boton Agregar */
 

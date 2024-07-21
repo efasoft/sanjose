@@ -6,8 +6,9 @@
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
-<img align="center" height="140" src="efa_soft.jpg"  />
-<h3 color="#FFF">VERSION DOS</h3>
+<img align="center" height="140" src="efa_soft.jpg"  />  
+
+
 </div>
 
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
@@ -26,7 +27,6 @@
 <h3 align="center">VERSION WEB</h3>
 
 ![Sistema de Control Educativo Web](sigg_web.png)
-<h6 >última actualización: 21/07/2024</h6>
 
 - **Nuestro Objetivo**
 

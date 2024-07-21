@@ -1,6 +1,6 @@
 <div align="center">
 
-<img align="center" height="140" src="ernesto_desarrollador.jpg"  />
+<img align="center" src="ernesto_desarrollador.jpg"  />
 
 
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
@@ -11,14 +11,13 @@
 </div>
 
 
-![En pleno Desarrollor](https://img.shields.io/badge/Desarrollo%20-%20?label=En%20pleno&labelColor=%23706FD6&color=%23C9240E) última actualización: 16/07/2024
-
+![En pleno Desarrollo](https://img.shields.io/badge/Desarrollo%20-%20?style=for-the-badge&label=En%20Pleno&labelColor=%23706FD6&color=%23C9240E) última actualización: 21/07/2024
 
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 
 ![Sistema de Control Educativo](sigg_edu.png)
 
-<h3 align="center">VERSION BAJO DOS</h3>
+<h3 align="center">VERSION DOS</h3>
 
 ![Sistema de Control Educativo DOS](sigg_dos.png)
 

@@ -14,23 +14,23 @@
 
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 
+<div align="center">
+
 ![Proyecto Inicial](https://img.shields.io/badge/vigente%20desde%202006%20-%20?style=for-the-badge&label=proyecto%20inicial&labelColor=%23F86E0E&color=%230442AD)
 
-<div align="center">
+</div>
 
 > ` VERSION DOS `
 
-</div>
-
 ![Sistema de Control Educativo DOS](sigg_dos.png)
-
-![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2021%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
 
 <div align="center">
 
-> ` VERSION WEB `
+![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2021%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
 
 </div>
+
+> ` VERSION WEB `
 
 ![Sistema de Control Educativo Web](sigg_web.png)
 

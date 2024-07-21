@@ -12,22 +12,13 @@
 
 </div>
 
-color = incluir("colores")
-imprimirf("Hola en verde: "..color.verde.."hola"..color.reset.."\n") // imprimimos 'hola' en color verde y reseteamos el color.
-imprimirf("Color azul con formato: "..color.simp("im.azul").."hola"..color.reset.."\n") // imprimimos 'hola' con formato, eligiendo i: italicas y m: marcado
-imprimirf("Tabla de colores:\n")
-color.colores() // imprime la tabla de colores
-imprimirf("Violeta con formato: " ..color.simp("im.128").."hola"..color.reset.."\n") // imprimimos texto violeta, el color/número '128' lo tomamos de la tabla de colores, argumentos: 'm': marcado, 'i': italicas
-imprimirf("Violeta normal: "..color.color(128).."hola"..color.reset.."\n") // imprimimos el color violeta '128' de la tabla de colores
-
-
-
-
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 
 ![Sistema de Control Educativo](sigg_edu.png)
 
 ![Proyecto Inicial](https://img.shields.io/badge/desde%202006%20%22VIGENTE%22%20-%20?style=for-the-badge&label=Proyecto%20Inicial&labelColor=%23F86E0E&color=%230442AD)
+
+> `VERSION DOS`
 
 <h3 align="center">VERSION DOS</h3>
 
@@ -35,6 +26,8 @@ imprimirf("Violeta normal: "..color.color(128).."hola"..color.reset.."\n") // im
 
 
 ![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2021%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
+
+> `VERSION WEB`
 
 <h3 align="center">VERSION WEB</h3>
 

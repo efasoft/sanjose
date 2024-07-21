@@ -7,7 +7,7 @@
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
 <img align="center" height="140" src="efa_soft.jpg"  />  
 
-***
+<p style="color:#0000FF;"></p>
 
 </div>
 

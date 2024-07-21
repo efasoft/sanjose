@@ -63,6 +63,7 @@
                     {% endif %}
                 {% endif %}
               </small>
+
               <div class="input-group input-group-sm mb-3">
                 <input type="email" class="form-control" name="username" id="id_username" autofocus="" value="" placeholder="Email" >
 
@@ -111,24 +112,6 @@
 <script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 <!-- AdminLTE App -->
 <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
-
-<script>
-/* Nuevo Formato de INPUT 
-const inputs = document.querySelectorAll("input");
-
-inputs.forEach((input) => {
-  input.addEventListener("blur", (event) => {
-    if (event.target.value) {
-      input.classList.add("is-valid");
-    } else {
-      input.classList.remove("is-valid");
-    }
-  });
-});
-/* End Nuevo Formato de INPUT */
-</script>
-
-
 
 </body>
 </html>

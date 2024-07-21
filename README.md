@@ -9,7 +9,19 @@
 <img align="center" height="140" src="efa_soft.jpg"  />  
 
 <p style="color:#0000FF;">Este texto debería ser azul.</p>
+
 </div>
+
+color = incluir("colores")
+imprimirf("Hola en verde: "..color.verde.."hola"..color.reset.."\n") // imprimimos 'hola' en color verde y reseteamos el color.
+imprimirf("Color azul con formato: "..color.simp("im.azul").."hola"..color.reset.."\n") // imprimimos 'hola' con formato, eligiendo i: italicas y m: marcado
+imprimirf("Tabla de colores:\n")
+color.colores() // imprime la tabla de colores
+imprimirf("Violeta con formato: " ..color.simp("im.128").."hola"..color.reset.."\n") // imprimimos texto violeta, el color/número '128' lo tomamos de la tabla de colores, argumentos: 'm': marcado, 'i': italicas
+imprimirf("Violeta normal: "..color.color(128).."hola"..color.reset.."\n") // imprimimos el color violeta '128' de la tabla de colores
+
+
+
 
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 

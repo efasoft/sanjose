@@ -2,13 +2,12 @@
 
 <img align="center" src="ernesto_desarrollador.jpg"  />
 
-
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
 <img align="center" height="140" src="efa_soft.jpg"  />  
 
-<p style="color:#0000FF;"></p>
+***
 
 </div>
 

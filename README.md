@@ -8,22 +8,18 @@
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
 <img align="center" height="140" src="efa_soft.jpg"  />  
 
-<p style="color:#0000FF;">Este texto debería ser azul.</p>
+<p style="color:#0000FF;"></p>
 
 </div>
 
-```sh
-
 > Actualmente trabajo en la migración de un Sistema Administrativo para una escuela primaria. Inicialmente el sistema administartivo lo desarrolle bajo Clipper 5.3 y Dbase III, totalmente operativo y trabajando por más de 18 años. 
 
-```
 
 ![Sistema de Control Educativo](sigg_edu.png)
 
 ![Proyecto Inicial](https://img.shields.io/badge/desde%202006%20%22VIGENTE%22%20-%20?style=for-the-badge&label=Proyecto%20Inicial&labelColor=%23F86E0E&color=%230442AD)
 
 > ` VERSION DOS `
-
 
 ![Sistema de Control Educativo DOS](sigg_dos.png)
 

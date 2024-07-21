@@ -38,7 +38,7 @@
 
 - **Nuestro Objetivo**
 
-> El sistema esta orientado a mejorar el acceso a la información de cada alumno, permitiendo la participación de los representantes y de todo el personal Directivo, Docente y Administrativo de la escuela. Para ello se podra contar con datos reales sobre la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Los represeantes tendran conocimiento de los trabajos asignados a los alumnos, conoceran las proximas actividades que se llevaran a cabo en la escuela, podran interactuar con nuestro blog y dejar sus comentarios. La plataforma servira como espacio informativo para todas aquellas personas que quieran conocer sobre la escuela, como para aquellas personas que tengan a sus hijos cursando algun año escolar.
+> El sistema está orientado a mejorar el acceso a la información de cada alumno, permitiendo la participación de los representantes y de todo el personal Directivo, Docente y Administrativo de la escuela. Para ello se podrá contar con datos reales sobre la cantidad de alumnos por Grado y Sección, generando diversos tipos de listados. Los representantes tendrán conocimiento de los trabajos asignados a los alumnos, conocerán las próximas actividades que se llevarán a cabo en la escuela, podrán interactuar con nuestro blog y dejar sus comentarios. La plataforma servirá como espacio informativo para todas aquellas personas que quieran conocer sobre la escuela, como para aquellas personas que tengan a sus hijos cursando algún año escolar.
 
 
 - **Lenguajes y Herramientas**

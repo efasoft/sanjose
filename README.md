@@ -25,7 +25,7 @@
 
 <div align="center">
 
-![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2021%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
+![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2023%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
 
 </div>
 
@@ -36,6 +36,8 @@
 ![Sistema de Control Educativo Web](/sigg_img/sigg_web.png)
 
 ![Sistema de Control Educativo Web Datos](/sigg_img/sigg_datos.png)
+
+![Desarrollo Web realizado por](https://img.shields.io/badge/WEB%20realizado%20por%20-%20?style=flat-square&label=DESARROLLO) 
 
 ![Sistema de Control Educativo](/sigg_img/sigg_edu.png)
 

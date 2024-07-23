@@ -37,7 +37,11 @@
 
 ![Sistema de Control Educativo Web Datos](/sigg_img/sigg_datos.png)
 
-![Desarrollo Web realizado por](https://img.shields.io/badge/WEB%20realizado%20por%20-%20?style=flat-square&label=DESARROLLO) 
+<div align="center">
+
+![Desarrollo Web realizado por](https://img.shields.io/badge/realizado%20por%20-%20?style=flat-square&label=DESARROLLO%20WEB) 
+
+</div>
 
 ![Sistema de Control Educativo](/sigg_img/sigg_edu.png)
 

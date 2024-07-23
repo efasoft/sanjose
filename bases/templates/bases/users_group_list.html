@@ -1,3 +1,4 @@
+<!-- Ult. Act. 23/07/2024 -->
 {% extends 'base/index.html' %}
 
 {% block content_wrapper %}
@@ -15,51 +16,51 @@
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
-  </div>
+</div>
 {% endblock %}
 {% block content %}
+<!-- CUADRO DE DATOS -->  
 <div class="row">
-    <div class="col-12">
-      <div class="card-sm">
-            <div class="callout callout-info bg-light shadow-sm"  style="height: 75px;">
-              <!-- Botones para Guardar y Salir sin grabar -->
-              <!--  Boton Agregar -->
-              <a href="{% url 'config:user_groups_new'%}" class="btnfos btnfos-3 text-center text-decoration-none  text-info">
-                <i class="fa-solid fa-notes-medical fa-xl text-info"></i>              
-                &nbsp;Agregar
-              </a>                    
-              <!-- End Botones -->
-            </div>
+  <div class="col-12">
+    <div class="card-sm">
+        <div class="callout callout-info bg-light shadow-sm"  style="height: 75px;">
+          <!--  Boton Agregar -->
+          <a href="{% url 'config:user_groups_new'%}" class="btnfos btnfos-3 text-center text-decoration-none  text-info">
+            <i class="fa-solid fa-notes-medical fa-xl text-info"></i>              
+            &nbsp;Agregar
+          </a>                    
+          <!-- End Botones -->
+        </div>
           
-            <!-- /.card-header -->
-            <div class="callout callout-info bg-white shadow-sm">
-              <table id="tbl" class="table table-bordered table-striped table-hover table-sm table-hover-bg-warning">
-                <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Nombre del Grupo</th>
-                  <th>Acciones</th>
-                </tr>
-                </thead>
-                <tbody>
-                    {% for item in obj%}
-                    <tr>
-                        <td>{{item.id}}</td>
-                        <td>{{item.name}}</td>
-                        <td>
-                            <a href="{% url 'config:user_groups_modify'  item.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edtar""><i class="fa fa-edit"></i></a>
-                            <button type="button" class="btn btn-sm text-danger class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Eliminar""
-                            onclick='return abrir_borrar("{{item.name}}","{% url 'config:user_groups_delete' item.id%}")'><i class="far fa-trash-alt"></i></button>
-                        </td>
-                    </tr>
-                    {%endfor%}
-
-                </tbody>
-              </table>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
+        <!-- TABLA DE DATOS -->
+        <div class="callout callout-info bg-white shadow-sm">
+          <table id="tbl" class="table table-bordered table-striped table-hover table-hover-bg-warning table-sm ">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombre del Grupo</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in obj%}
+              <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>
+                  <a href="{% url 'config:user_groups_modify'  item.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edtar""><i class="fa fa-edit"></i></a>
+                    <button type="button" class="btn btn-sm text-danger class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Eliminar""
+                    onclick='return abrir_borrar("{{item.name}}","{% url 'config:user_groups_delete' item.id%}")'><i class="far fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              {%endfor%}
+            </tbody>
+          </table>
+        </div>
+        <!-- End TABLA DE DATOS -->
     </div>
-</div>
+    <!-- /.card -->
+  </div>
+</div>  
+<!-- End CUADRO DE DATOS -->   
 {% endblock%}

@@ -5,21 +5,22 @@
 {% block content %}
 <div class="row">
   <div class="col-12 mt-4">
+    <!-- CUADRO DE DATOS -->  
     <div class="card-sm">
-      <div class="callout callout-info bg-light shadow-sm"  style="height: 60px;">
+      <div class="callout callout-info bg-light shadow-sm">
         {% if obj %} Editar {% else %} Crear {% endif %} Grupo de Usuario
       </div>
-      <div class="callout callout-success bg-white shadow-sm">
+      <div class="callout callout-success bg-white shadow-sm pt-4 pb-0">
         <form method="POST" id="mis_datos" class="form-group mb-0 pb-0">
           {% csrf_token %}
           <div class="row pl-2 pr-2">
             <div class="form-group input-f-Container col-12">
               <input type="text" class="input-f" id="name" name="name" placeholder="a"
-              value="{{obj.name}}" required >
+              value="{{obj.name}}" required>
               <label for="" class="label-f">Nombre del Grupo</label>
             </div>
           </div>
-          <!--          
+         <!--          
           <div class="form-group">
             <label for="exampleInputEmail1">Nombre del Grupo</label>
             <input type="text" required class="form-control" id="name" name="name" placeholder="Nombre del Grupo" 
@@ -50,7 +51,7 @@
           <!-- Botones para Guardar y Salir sin grabar -->
           <section class="buttons-datos">
             <!--  Boton Grabar -->
-            <a href="#" class="btnfos btnfos-01 text-center" id="btnEnviarDatos" style="color: #186802;">
+            <a href="#" class="btnfos btnfos-01 text-center text-decoration-none" id="btnEnviarDatos" style="color: #186802;">
               <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
               </svg>
@@ -60,7 +61,7 @@
             </a>
 
             <!--  Boton Salir  -->
-            <a href="{% url 'config:user_groups_list'%}" class="btnfos btnfos-2 text-center"  style="color: #950202;">
+            <a href="{% url 'config:user_groups_list'%}" class="btnfos btnfos-2 text-center text-decoration-none"  style="color: #950202;">
               <i class="fa-solid fa-right-to-bracket fa-lg"style="color: #950202;"></i>              
               <!--  <i class="fa-regular fa-circle-xmark fa-lg" style="color: #950202;"></i> -->
               &nbsp;Salir
@@ -70,6 +71,7 @@
         </form>
       </div>
     </div>
+    <!-- End CUADRO DE DATOS -->      
   </div>
 </div>
 <!-- End Datos Generales -->
@@ -77,17 +79,17 @@
 {% if obj %}
 <div class="row">
   <div class="col-6">
-    <div class="card">
-      <div class="card-header">
-        Permisos del Grupo : {{obj}}
+    <div class="card-sm">
+      <div class="callout callout-success bg-light shadow-sm">
+        Permisos Asignados al Grupo : {{obj}}
       </div>
       <!-- /.card-header -->
-      <div class="card-body">
+      <div class="callout callout-success bg-white shadow-sm">
         <table id="tblGrp" class="table table-bordered table-striped table-hover table-sm table-hover-bg-warning">
           <thead>
           <tr>
             <th>Id</th>
-            <th>Nombre</th>
+            <th>Permisos</th>
             <th>Acciones</th>
           </tr>
           </thead>
@@ -97,7 +99,7 @@
                   <td>{{item.id}}</td>
                   <td>{{item.name}}</td>
                   <td>
-                      <a href="#" class="btn btn-sm text-success"
+                      <a href="#" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Eliminar Permiso""
                       onclick="permiso('{{item.id}}','DEL')"
                       ><i class="far fa-trash-alt"></i></a>
                   </td>
@@ -112,17 +114,17 @@
     <!-- /.card -->
   </div>
   <div class="col-6">
-    <div class="card">
-      <div class="card-header">
+    <div class="card-sm">
+      <div class="callout callout-success bg-light shadow-sm">
         Agregar Permisos al Grupo : {{obj}}
       </div>
       <!-- /.card-header -->
-      <div class="card-body">
+      <div class="callout callout-success bg-white shadow-sm">
         <table id="tbl" class="table table-bordered table-striped table-hover table-sm table-hover-bg-warning">
           <thead>
           <tr>
             <th>Id</th>
-            <th>Nombre</th>
+            <th>Seleccione el Permiso que desea agregar</th>
             <th>Acciones</th>
           </tr>
           </thead>
@@ -132,7 +134,7 @@
                   <td>{{item.id}}</td>
                   <td>{{item.name}}</td>
                   <td>
-                      <a href="#" class="btn btn-sm text-success"
+                      <a href="#" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Agregar Permiso""
                       onclick="permiso('{{item.id}}','ADD')"
                       ><i class="fas fa-plus"></i></a>
                   </td>

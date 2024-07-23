@@ -39,14 +39,14 @@
               <small class="p-0">Identificate</small>                        
             </p>
      
-            <form method="post">
+            <form method="post" class="form-group">
               {% csrf_token %}
               <small class="text-danger">
                 {% if messages %}
-                {% for m in messages%}
-                  {{m}} <br>
-                {% endfor %}
-              {% endif %}
+                    {% for m in messages%}
+                      {{m}} <br>
+                    {% endfor %}
+                {% endif %}
                 {% if form.errors %}
                     {% for field in form %}
                         {% if field.errors %}
@@ -64,15 +64,29 @@
                 {% endif %}
               </small>
 
+              <div class="row pl-2 pr-2 mt-2">
+                <div class="form-group input-f-Container col-10">
+                  <input type="email" class="input-f" name="username" id="id_username" autofocus="" value="" placeholder="a">
+                  <label for="" class="label-f">Email</label>
+                </div>
+              </div>    
+
+              <div class="row pl-2 pr-2 mt-4">
+                <div class="form-group input-f-Container col-10">
+                  <input type="password" class="input-f" name="password" id="id_password" value="" placeholder="a">
+                  <label for="" class="label-f">Contraseña</label>
+                </div>
+              </div>               
+ 
+<!--
+
               <div class="input-group input-group-sm mb-3">
                 <input type="email" class="form-control" name="username" id="id_username" autofocus="" value="" placeholder="Email" >
-
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
                   </div>
                 </div> 
-
               </div>
               <div class="input-group input-group-sm mb-3">
                 <input type="password" class="form-control" name="password" id="id_password" value="" placeholder="Password">
@@ -82,18 +96,18 @@
                   </div>
                 </div>
               </div>
+-->             
+              <!-- Boton INGRESAR -->
               <div class="row">
+                <div class="col-8">
+                </div>
                 <!-- /.col -->
-                  <div class="col-8">
-
-                  </div>
-               
-                  <div class="col-4">
-                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-                  </div>
-
-                <!--/.col -->
+                <div class="col-4">
+                  <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                </div>
+                <!-- /.col -->
               </div>
+              <!-- End Boton INGRESAR -->              
             </form>
    
             

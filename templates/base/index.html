@@ -536,149 +536,86 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <i class="nav-icon fa-solid fa-coins"></i>
               <p>
                 Cuentas por Cobrar
-                <i class="fa-solid fa-chevron-right right"></i>
+                <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:10px;"></i>
               </p>
             </a> 
-            <!-- CATALOGOS CxC   -->
+
+            <!-- TRANSACCIONES  -->
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="#" class="nav-link" style="color:#FFF;">
-                  <i class="fa-regular fa-swatchbook"></i>
-                  <p><small>&nbsp;Catálogos</small>
-                    <i class="fa-solid fa-chevron-right right" ></i>  
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <p><small>&nbsp;Transacciones</small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
+                      <p><small>&nbsp;Consulta de Saldo</small></p>
                     </a>
                   </li>
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Personal Doc. Adm. y Obr.</small></p>
+                      <p><small>&nbsp;Generar Cuotas Mensuales</small></p>
                     </a>
                   </li>                  
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Sueldos.</small></p>
+                      <p><small>&nbsp;Documentos a Cobrar</small></p>
                     </a>
                   </li> 
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Actualización de Primas</small></p>
+                      <p><small>&nbsp;Registreo de Pagos</small></p>
                     </a>
                   </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Cargos del Personal</small></p>
-                    </a>
-                  </li>
                   
                 </ul>
               </li> 
-              <!-- TRANSACCIONES    -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"  style="color:#FFF;">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <p><small>&nbsp;Transacciones</small>
-                    <i class="fa-solid fa-chevron-right right"></i>  
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Registro de calificación Final</small></p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Buena Conducta 6º</small></p>
-                    </a>
-                  </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pasar alumnos de un grado a otro</small></p>
-                    </a>
-                  </li> 
-
-                 
-                  
-                </ul>
-              </li>       
-              <!-- REPORTES DE REPRESENTANTES    -->
+              <!-- REPORTES -->
               <li class="nav-item">
                 <a href="#" class="nav-link"  style="color:#FFF;">
                   <i class="fa-solid fa-print"></i>
-                  <p><small>&nbsp;Reportes de Representantes</small>
-                    <i class="fa-solid fa-chevron-right right"></i>  
+                  <p><small>&nbsp;Reportes </small>
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes</small></p>
+                      <p><small>&nbsp;Estado de Cuenta</small></p>
                     </a>
                   </li>
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Representantes por Grado y Sección</small></p>
+                      <p><small>&nbsp;Documentos a Cobrar</small></p>
                     </a>
                   </li>                  
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>     
-                      <p><small>&nbsp;Representantes e Hijos</small></p>
+                      <p><small>&nbsp;Documentos NO COBRABLES</small></p>
                     </a>
                   </li> 
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Carta de Morosidad</small></p>
+                      <p><small>&nbsp;Pagos recibidos</small></p>
                     </a>
                   </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Pagos por Inscripción - Total</small></p>
-                    </a>
-                  </li>    
-                  
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Diferencia en Mensualidades</small></p>
-                    </a>
-                  </li>                  
                   
                 </ul>
               </li>   
@@ -687,42 +624,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="#" class="nav-link"  style="color:#FFF;">
                   <i class="fa-solid fa-screwdriver-wrench"></i>
                   <p><small>&nbsp;Definiciones</small>
-                    <i class="fa-solid fa-chevron-right right"></i>  
+                    <i class="right bi-arrow-right-circle" style="font-size: 1.2rem; top:3px; right:23px;"></i>  
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Colaboración por Inscripción</small></p>
+                      <p><small>&nbsp;Definiciones Generales</small></p>
                     </a>
                   </li>
 
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Meses del año Escolar</small></p>
+                      <p><small>&nbsp;Formas de Pagor</small></p>
                     </a>
                   </li>                  
-
-                  <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>      
-                      <p><small>&nbsp;Condición - Representantes</small></p>
-                    </a>
-                    {% endif %}
-                  </li> 
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-                      <p><small>&nbsp;Condición - Alumnos</small></p>
-                    </a>
-                  </li> 
-
                  
-                  
                 </ul>
               </li>               
             </ul>
@@ -975,7 +894,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     $('[data-widget="pushmenu"]').PushMenu('collapse')
 
     $("#tbl").DataTable({
-      "pageLength": 5,        
+      "lengthMenu": [5,10,15,20,25],        
       "language": {
       "sProcessing": "Procesando...",
       "sLengthMenu": "Mostrar _MENU_ registros",

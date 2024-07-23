@@ -557,9 +557,9 @@ button-datos:hover:before,button-datos:hover:after{
   top: 15px;
   left: 15px;
   padding: 0 4px;
-  background-color: white;
+/*   background-color: white; */
   color: #DADCE0;
-  font-size: 14px;
+  font-size: 12px;
   transition: 0.5s;
   z-index: 0;
 }
@@ -569,7 +569,7 @@ button-datos:hover:before,button-datos:hover:after{
 }
 
 .input-f:focus + .label-f {
-  top: -7px;
+  top: -20px;
   left: 3px;
   z-index: 10;
   font-size: 12px;
@@ -578,7 +578,7 @@ button-datos:hover:before,button-datos:hover:after{
 }
 
 .input-f:not(:placeholder-shown)+ .label-f {
-  top: -9px;
+  top: -22px;
   left: 3px;
   z-index: 10;
   font-size: 12px;

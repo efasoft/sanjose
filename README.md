@@ -1,11 +1,11 @@
 <div align="center">
 
-<img align="center" src="ernesto_desarrollador.jpg"  />
+<img align="center" src="/sigg_img/ernesto_desarrollador.jpg"  />
 
 ![Me encanta Programar](https://img.shields.io/badge/Programar%20-%20?label=Me%20encanta&labelColor=%23CFCC09&color=%2320A8AF)
 
 <h3 align="center">soy Desarrollador Front-End y Back-End desde 1987</h3>
-<img align="center" height="140" src="efa_soft.jpg"  />  
+<img align="center" height="140" src="/sigg_img/efa_soft.jpg"  />  
 
 <p style="color:#0000FF;"></p>
 
@@ -21,7 +21,7 @@
 
 > ` VERSION DOS `
 
-![Sistema de Control Educativo DOS](sigg_dos.png)
+![Sistema de Control Educativo DOS](/sigg_img/sigg_dos.png)
 
 <div align="center">
 
@@ -33,9 +33,11 @@
 
 ![Sistema de Control Educativo Login](/sigg_img/sigg_login.png)
 
-![Sistema de Control Educativo Web](sigg_web.png)
+![Sistema de Control Educativo Web](/sigg_img/sigg_web.png)
 
-![Sistema de Control Educativo](sigg_edu.png)
+![Sistema de Control Educativo Web Datos](/sigg_img/sigg_datos.png)
+
+![Sistema de Control Educativo](/sigg_img/sigg_edu.png)
 
 - **Nuestro Objetivo**
 

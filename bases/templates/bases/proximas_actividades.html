@@ -5,10 +5,10 @@
 {% endblock %}
 {% block content %}
   <!-- Carrousel 07 Próximas Actividades -->
-  <section  id="PROXIMAS-ACTIVIDADES" style="background-image:url({% static 'img/patron_fondo_02.jpg' %});">     
-    <div class="container p-1" >
+  <section  id="PROXIMAS-ACTIVIDADES">     
+    <div class="container" >
       <div class="row" >
-        <div class="col-md-12 c-degra-actividades" style="height: 55px;">    
+        <div class="col-md-12 text-center c-degra-actividades" style="height: 85px;">     
               <p class="h3 text-center animate__animated animate__fadeInUp animate__slower animate__repeat-2" style="opacity: .4; color:#FFF;margin: 0.20em;">PRÓXIMAS ACTIVIDADES</p>
         </div>
 
@@ -24,7 +24,7 @@
                     <span class="yr">2024</span>
                   </div>                 
                 </a>
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix shadow-lg p-3 mb-5">
                   <blockquote class="quote-warinig">
                   <h3 class="heading"><a href="#staff">Fin de Curso</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela. Ven y participa</p> 
@@ -45,7 +45,7 @@
                     <span class="yr">2024</span>
                   </div>  
                 </a>
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix shadow-lg p-3 mb-5">
                   <blockquote class="quote-info">
                   <h3 class="heading"><a href="cursos-y-talleres">Presentacion 4to. Grado</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
@@ -66,7 +66,7 @@
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix  shadow-lg p-3 mb-5">
                   <blockquote class="quote-success">
                   <h3 class="heading"><a href="#">Cumple Rodri</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
@@ -87,7 +87,7 @@
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix shadow-lg p-3 mb-5">
                   <blockquote class="quote-fuchsia">
                   <h3 class="heading"><a href="#">Tía Beba</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
@@ -108,7 +108,7 @@
                     <span class="yr">2024</span>
                   </div> 
                 </a>
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix shadow-lg p-3 mb-5">
                   <blockquote class="quote-purple">
                   <h3 class="heading"><a href="#">Próximas Actividades</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
@@ -129,7 +129,7 @@
                     <span class="yr">2024</span>
                   </div> 
                 </a>            
-                <div class="card-body clearfix p-1">
+                <div class="card-body clearfix shadow-lg p-3 mb-5">
                   <blockquote class="quote-orange">
                   <h3 class="heading"><a href="#">Contáctanos</a></h3>
                   <p>Quienes somos, conoce nuestros inicios y trayectoria, parte importe de nuestra identidad como escuela.</p> 
@@ -150,3 +150,8 @@
   <!-- End Carrousel 07 Próximas Actividades --> 
 
 {% endblock %}
+{% block js %}
+<script>
+    document.getElementById('contenido-slider').classList.add('slider-proximas-actividades');   
+</script>
+{% endblock js%}

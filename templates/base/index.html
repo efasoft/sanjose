@@ -721,13 +721,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </aside>
  {% endblock main_sidebar %}
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div id="contenido-slider" class="content-wrapper img-fluid">
       {% block content_wrapper%}  
     <!-- Content Header (Page header) -->
     <div class="content-header">
-
-
-
 
     <!--
       <div class="container-fluid">
@@ -894,7 +891,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     $('[data-widget="pushmenu"]').PushMenu('collapse')
 
     $("#tbl").DataTable({
-      "lengthMenu": [5,10,15,20,25],        
+      "lengthMenu": [5,10,15,20,25],    
       "language": {
       "sProcessing": "Procesando...",
       "sLengthMenu": "Mostrar _MENU_ registros",
@@ -934,23 +931,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         '<div class="tooltip tooltip-custom" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>',
     });
   });
-
-/* 
- document.addEventListener('DOMContentLoaded', function () {
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-      })
-  }, false);
-
-
-const tooltipTriggerList = document.querySelectorAll('[data-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-*/
-
-
-
-
 
 
   $("#btnEnviarDatos").click(function(e)

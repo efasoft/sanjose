@@ -46,6 +46,41 @@ div.efa{
   width: 80px;;  
 } 
 
+/* BACKGROUND - SLIDER  */
+.slider-inicio { 
+  background: url("/static/img/galeria-01-o.jpg") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slider-staff-docentes { 
+  background: url("/static/img/patron_fondo_01.jpg") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slider-proximas-actividades { 
+  background: url("/static/img/patron_fondo_03.jpg") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slider-cursos-y-talleres { 
+  background: url("/static/img/patron_fondo_06.jpg") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
 /* HOME - CURSOS Y TALLERES */
 .slider-item{
   min-height: 100%;

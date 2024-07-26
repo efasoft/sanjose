@@ -72,14 +72,12 @@ div.efa{
 }
 
 .slider-cursos-y-talleres { 
-  background: url("/static/img/patron_fondo_06.jpg") no-repeat center center fixed;  
+  background: url("/static/img/patron_fondo_11.jpg") no-repeat center center fixed;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-
 
 /* HOME - CURSOS Y TALLERES */
 .slider-item{

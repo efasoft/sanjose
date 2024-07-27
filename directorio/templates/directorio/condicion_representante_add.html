@@ -1,0 +1,50 @@
+{% extends 'base/index.html' %}
+
+{% block content_wrapper %}
+{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-12 mt-4">
+    <!-- CUADRO DE DATOS -->  
+    <div class="card-sm">
+      <div class="callout callout-info bg-light shadow-sm">
+        {% if obj %} Editar {% else %} Crear {% endif %} Condición del Representante
+      </div>
+      <div class="callout callout-success bg-white shadow-sm pt-4 pb-0">
+        <form method="POST" id="mis_datos" class="form-group mb-0 pb-0">
+          {% csrf_token %}
+          <div class="row pl-2 pr-2">
+            <div class="form-group input-f-Container col-12">
+              <input type="text" class="input-f" id="descripcion" name="descripcion" placeholder="a"
+              value="{{obj.descripcion}}" required>
+              <label for="" class="label-f">Condición del Representante</label>
+            </div>
+          </div>
+          <!-- Botones para Guardar y Salir sin grabar -->
+          <section class="buttons-datos">
+            <!--  Boton Grabar -->
+            <a href="#" class="btnfos btnfos-01 text-center text-decoration-none" id="btnEnviarDatos" style="color: #186802;">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+              </svg>
+              <i class="fa-solid fa-check fa-lg" style="color: #186802;"></i>              
+              <!-- <i class="fa-regular fa-circle-check fa-lg" style="color: #186802;"></i> -->
+              &nbsp;Guardar
+            </a>
+
+            <!--  Boton Salir  -->
+            <a href="{% url 'direc:condicion_representante_list'%}" class="btnfos btnfos-2 text-center text-decoration-none"  style="color: #950202;">
+              <i class="fa-solid fa-right-to-bracket fa-lg"style="color: #950202;"></i>              
+              <!--  <i class="fa-regular fa-circle-xmark fa-lg" style="color: #950202;"></i> -->
+              &nbsp;Salir
+            </a>                      
+          </section>
+          <!-- End Botones -->
+        </form>
+      </div>
+    </div>
+    <!-- End CUADRO DE DATOS -->      
+  </div>
+</div>
+<!-- End Datos Generales -->
+{% endblock%}

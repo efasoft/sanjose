@@ -259,7 +259,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                   <li class="nav-item">
                     {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>      
                       <p><small>&nbsp;Alumnos - Repres. - Pers. a Historico</small></p>
                     </a>
@@ -508,8 +508,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>                  
 
                   <li class="nav-item">
-                    {% if perms.directorio.view_situacion%}
-                    <a href="{% url 'direc:situacion_list'%}" class="nav-link">
+                    {% if perms.directorio.view_condicion_representanten%}
+                    <a href="{% url 'direc:condicion_representante_list'%}" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>      
                       <p><small>&nbsp;Condición - Representantes</small></p>
                     </a>
@@ -896,7 +896,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       "sProcessing": "Procesando...",
       "sLengthMenu": "Mostrar _MENU_ registros",
       "sZeroRecords": "No se encontraron resultados",
-      "sEmptyTable": "Ningún dato disponible en esta tabla",
+      "sEmptyTable": "No existen datos que mostrar",
       "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
       "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
       "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",

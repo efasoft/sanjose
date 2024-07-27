@@ -196,7 +196,7 @@ def user_group_add(request,id_usr,id_grp):
         
         if accion=="ADD":
             usr.groups.add(grp)
-            messages.success(request,"Grupo Agregado")
+            messages.success(request,"Grupo Agregado FELIZ")
         elif accion=="DEL":
             usr.groups.remove(grp)
             messages.warning(request,"Grupo Eliminado")

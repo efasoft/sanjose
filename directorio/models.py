@@ -3,10 +3,10 @@ from django.db import models
 from bases.models import ClaseModelo
 
 # Create your models here.
-class Situacion(ClaseModelo):
+class Condicion_Representante(ClaseModelo):
     descripcion = models.CharField(
         max_length=100,
-        help_text='Situación del Representante',
+        help_text='Condición del Representante',
         unique=True
     )
 
@@ -15,7 +15,7 @@ class Situacion(ClaseModelo):
 
     def save(self):
         self.descripcion = self.descripcion.upper()
-        super(Situacion, self).save()
+        super(Condicion_Representante, self).save()
 
     class Meta:
-        verbose_name_plural = "Situacion"
+        verbose_name_plural = "Condicion_Representante"

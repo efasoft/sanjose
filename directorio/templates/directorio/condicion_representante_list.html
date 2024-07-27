@@ -1,0 +1,68 @@
+<!-- Ult. Act. 26/07/2024 -->
+{% extends 'base/index.html' %}
+
+{% block content_wrapper %}
+<div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Condición de los Representantes</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item active">Condición de los Representantes</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock %}
+{% block content %}
+<!-- CUADRO DE DATOS -->  
+<div class="row">
+  <div class="col-12">
+    <div class="card-sm">
+        <div class="callout callout-info bg-light shadow-sm"  style="height: 75px;">
+          <!--  Boton Agregar 
+          <a href="{% url 'config:user_groups_new'%}" class="btnfos btnfos-3 text-center text-decoration-none  text-info">
+          -->
+          <a href="{% url 'direc:condicion_representante_new'%}" class="btnfos btnfos-3 text-center text-decoration-none  text-info">          
+            <i class="fa-solid fa-notes-medical fa-xl text-info"></i>              
+            &nbsp;Agregar
+          </a>                    
+          <!-- End Botones -->
+        </div>
+          
+        <!-- TABLA DE DATOS -->
+        <div class="callout callout-info bg-white shadow-sm">
+          <table id="tbl" class="table table-bordered table-striped table-hover table-hover-bg-warning table-sm ">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Condición del Representante</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in obj%}
+              <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.descripcion}}</td>
+                <td>
+                  <a href="{% url 'direc:condicion_representante_modify'  item.id %}" class="btn btn-sm text-success class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edtar""><i class="fa fa-edit"></i></a>
+                    <button type="button" class="btn btn-sm text-danger class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Eliminar""
+                    onclick='return abrir_borrar("{{item.descripcion}}","{% url 'direc:condicion_representante_delete' item.id%}")'><i class="far fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              {%endfor%}
+            </tbody>
+          </table>
+        </div>
+        <!-- End TABLA DE DATOS -->
+    </div>
+    <!-- /.card -->
+  </div>
+</div>  
+<!-- End CUADRO DE DATOS -->   
+{% endblock%}

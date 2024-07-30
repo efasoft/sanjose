@@ -508,7 +508,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>                  
 
                   <li class="nav-item">
-                    {% if perms.directorio.view_condicion_representanten%}
+                    {% if perms.directorio.view_condicion_representante%}
                     <a href="{% url 'direc:condicion_representante_list'%}" class="nav-link">
                       <i class="fa-solid fa-chevron-right fa-2xs"></i>      
                       <p><small>&nbsp;Condición - Representantes</small></p>
@@ -517,10 +517,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li> 
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    {% if perms.directorio.view_condicion_alumno%}
+                    <a href="{% url 'direc:condicion_alumno_list'%}" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>                           
                       <p><small>&nbsp;Condición - Alumnos</small></p>
                     </a>
+                    {% endif %}                    
                   </li> 
 
                   <li class="nav-item">
@@ -724,7 +726,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.sidebar -->
   </aside>
- {% endblock main_sidebar %}
+  {% endblock main_sidebar %}
   <!-- Content Wrapper. Contains page content -->
   <div id="contenido-slider" class="content-wrapper img-fluid">
       {% block content_wrapper%}  

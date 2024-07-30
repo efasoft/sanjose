@@ -6,10 +6,9 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
 
  
-from directorio.models import Condicion_Representante
+from directorio.models import Condicion_Representante, Condicion_Alumno
 
-
-# Create your views here.
+# CONDICION DE LOS REPRESENTANTES
 class Condicion_RepresentanteView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     template_name = "directorio/condicion_representante_list.html"
     login_url = 'config:home'
@@ -92,4 +91,84 @@ def condicion_representante_delete(request,pk):
             grp.delete()
         
         messages.success(request,"Registro Borrado Satisfactoriamente")
+        return HttpResponse("OK")     
+
+# CONDICION DE LOS ALUMNOS
+class Condicion_AlumnoView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    template_name = "directorio/condicion_alumno_list.html"
+    login_url = 'config:home'
+    model = Condicion_Alumno
+    permission_required = 'directorio:view_condicion_alumno'
+    context_object_name = 'obj'
+
+@login_required(login_url='config:login')
+@permission_required('directorio.change_condicion_alumno', login_url='bases:login')
+
+# AGREGA y MODIFICA UN REGISTRO
+def condicion_alumno_admin(request,pk=None):
+    template_name = 'directorio/condicion_alumno_add.html'
+    context = {}
+    descripcion = None    
+    obj = Condicion_Alumno.objects.filter(id = pk).first()
+    context["obj"] = obj
+
+    if request.method == "POST":
+        # COLOCO EN MAYUSCULA LO INGRESADO EN EL FORM
+        descripcion = request.POST.get("descripcion").upper() 
+        grp = Condicion_Alumno.objects.filter(descripcion=descripcion).first()
+
+       # VALIDANDO EL FORMULARIO
+        # NO PUEDE QUEDAR EN BLANCO
+        if not descripcion and pk == None: 
+            # AGREGAR
+            messages.error(request,"Por favor ingrese una Condición para el Alumno")
+            return redirect("direc:condicion_alumno_new")
+        elif not descripcion and pk != None:  
+            # EDITAR
+            messages.error(request,"ALERTA : Por favor ingrese una Condición para el Alumno")  
+            grp = Condicion_Alumno.objects.filter(id=pk).first()                      
+            return redirect("direc:condicion_alumno_modify", grp.id)
+        
+        # NO PUEDE ESTAR DUPLICADO
+        if grp and pk == None:
+            messages.error(request,"Atención : Condicion del Alumno ya existe, no puede volver a crearlo")
+            return redirect("direc:condicion_alumno_new")
+        elif grp and grp.id != pk: 
+            # EDITAR
+            messages.error(request,"ALERTA : Condicion del Alumno ya existe, no puede volver a crearlo")
+            grp = Condicion_Alumno.objects.filter(id=pk).first()                      
+            return redirect("direc:condicion_alumno_modify", grp.id)        
+
+        
+        if not grp and pk != None:
+            # Condicion del Alumno Existe, se está cambiando el dato registrado
+            grp = Condicion_Alumno.objects.filter(id=pk).first()
+            grp.descripcion = descripcion
+        elif not grp and pk == None:
+            grp = Condicion_Alumno(descripcion=descripcion)
+        else:
+            ...
+        # SE PROCEDE A GRABAR EN LA TABLA
+        grp.save()
+        messages.success(request, "Registro Guardado Satisfactoriamente")
+        return redirect('direc:condicion_alumno_list')
+    
+    return render(request,template_name,context)
+
+# ELIMINA UN REGISTRO
+@login_required(login_url='config:login')
+@permission_required('directorio.delete_condicion_alumno', login_url='bases:login')
+def condicion_alumno_delete(request,pk):
+    if request.method == "POST":
+        grp = Condicion_Alumno.objects.filter(id=pk).first()
+
+        if not grp:
+            print("Condicion de Alumno No Existe")
+        else:
+            # SE PROCEDE A ELIMINAR DE LA TABLA
+            grp.delete()
+        
+        messages.success(request,"Registro Borrado Satisfactoriamente")
         return HttpResponse("OK")    
+
+

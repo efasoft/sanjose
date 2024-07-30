@@ -25,7 +25,7 @@
 
 <div align="center">
 
-![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2027%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
+![En pleno Desarrollo](https://img.shields.io/badge/%C3%BAltima%20actualizaci%C3%B3n%2030%2F07%2F2024%20-%20?style=for-the-badge&label=En%20pleno%20desarrollo&labelColor=%23706FD6&color=%23C9240E) 
 
 </div>
 

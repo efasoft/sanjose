@@ -523,7 +523,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </a>
                   </li> 
 
-                 
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                      <p><small>&nbsp;Movimientos - Alumnos</small></p>
+                    </a>
+                  </li>                  
                   
                 </ul>
               </li>               
@@ -872,7 +877,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   })
 
   $(document).ready(function(){
-    var $enlaces = $(".nav>.nav-item>.nav-link");
+    var $enlaces = $(".nav>.nav-item>.nav-link.nav-link");
 
     $($enlaces).each(function(){
        var request_path = '{{request.path}}'
@@ -880,7 +885,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
        var link= $(this).attr('href')
 
        if(request_path.includes(link) && link!="/"){
-         var grp_padre = $(this).parent().parent().parent().first()
+         var grp_padre = $(this).parent().parent().parent().parent().first()
          var contenedor = grp_padre.children("a")
          $(this).addClass("active")
          grp_padre.addClass("menu-open")
@@ -916,8 +921,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           "sSortDescending": ": Activar para ordenar la columna de manera descendente"
       }
     },
-
-      "responsive": true, "lengthChange": false, "autoWidth": false,
+      dom: '<"row p-0 inline" <"col-md-3"l><"col-md-6 w-50 text-sm-center"><"col-md-3"f>>t<"row"<"col-sm-12 col-md-6 text-xs-left"i><"col-sm-12 col-md-6"p>>',
+      "responsive": true, "lengthChange": true , "autoWidth": false,
       "buttons": ["csv", "excel", "pdf", "print"]
     }).buttons().container().appendTo('#tbl_wrapper .col-md-6:eq(0)');
   })

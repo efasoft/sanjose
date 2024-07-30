@@ -43,8 +43,30 @@ body.login-page {
 
 div.efa{
   height: 15px;  
-  width: 80px;;  
+  width: 80px;  
 } 
+
+/* UBICAR EL BOTON DE BUSCAR EN EL DATATABLE  */
+
+div.dataTables_wrapper div.dataTables_filter{
+  /* background-color:#2ec5c0;   */
+  position: relative;
+  right: 45px;
+
+}
+
+div.dataTables_wrapper div.col-md-3{
+  /* background-color:#4d5dec;  */
+  left: 15px;  
+  right: 85px;    
+}
+
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: 173px;
+}
 
 /* BACKGROUND - SLIDER  */
 .slider-inicio { 

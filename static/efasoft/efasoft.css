@@ -1,4 +1,6 @@
-/* LOGIN  */
+/* Ult. Act. 31/07/2024 */
+
+/* LOGIN  Imagen de Fondo */
 body.login-page { 
     background: url("/static/img/estudiando_15_o.jpg") no-repeat center center fixed;  
     -webkit-background-size: cover;
@@ -6,6 +8,7 @@ body.login-page {
     -o-background-size: cover;
     background-size: cover;
   }
+/* End LOGIN  */  
 
 /* HOME - CONOCE NUESTRA ESCUELA - Boton .. Leer mas - */
 .item .btn-primary{
@@ -40,6 +43,7 @@ body.login-page {
   }
 }
 
+/* End HOME - CONOCE NUESTRA ESCUELA - Boton .. Leer mas - */
 
 div.efa{
   height: 15px;  
@@ -47,30 +51,26 @@ div.efa{
 } 
 
 /* UBICAR EL BOTON DE BUSCAR EN EL DATATABLE  */
-
 div.dataTables_wrapper div.dataTables_filter{
-  /* background-color:#2ec5c0;   */
   position: relative;
   right: 45px;
-
 }
 
 div.dataTables_wrapper div.col-md-3{
-  /* background-color:#4d5dec;  */
   left: 15px;  
   right: 85px;    
 }
 
-
 div.dataTables_wrapper div.dataTables_filter input {
   margin-left: 0.5em;
   display: inline-block;
-  width: 173px;
+  width: 132px;
 }
+/* End UBICAR EL BOTON DE BUSCAR EN EL DATATABLE  */
 
 /* BACKGROUND - SLIDER  */
 .slider-inicio { 
-  background: url("/static/img/galeria-01-o.jpg") no-repeat center center fixed;  
+  background: url("/static/img/galeria-02-o.jpg") no-repeat center center fixed;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -94,43 +94,16 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .slider-cursos-y-talleres { 
-  background: url("/static/img/patron_fondo_11.jpg") no-repeat center center fixed;  
+  background: url("/static/img/patron_fondo_17.jpg") no-repeat center center fixed;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  opacity: 3;
 }
+/* End BACKGROUND - SLIDER  */
 
-/* HOME - CURSOS Y TALLERES */
-.slider-item{
-  min-height: 100%;
-  min-width: 100%;
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
-}
-
-.owl-carousel .slider-item h1{
-  text-align:center;  
-  font:15px/30px RalewayR;
-  color:#FFF;
-  overflow:hidden;
-  -webkit-animation:fadeInDown 1s both 1s;
-          animation:fadeInDown 1s both 1s;
-}
-/*Flecha para hacer la pagina hacia arriba*/
-.ir-arriba{
-  display:none;
-  background-repeat:no-repeat;
-  font-size:20px;
-  color:black;
-  cursor:pointer;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-  z-index:2;
-}
-
+/* TITULOS - SLIDER  */
 div.c-degra{
   background: rgb(2,0,36);
   background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,115,1) 47%, rgba(0,255,111,1) 100%);
@@ -154,6 +127,42 @@ div.c-degra-actividades{
   background: linear-gradient(90deg, rgba(30,171,58,1) 0%, rgba(9,77,121,1) 47%, rgba(0,212,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1eab3a",endColorstr="#00d4ff",GradientType=1);
 }
+/* End TITULOS - SLIDER  */
+
+/* HOME - CURSOS Y TALLERES */
+.slider-item{
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.owl-carousel .slider-item h1{
+  text-align:center;  
+  font:15px/30px RalewayR;
+  color:#FFF;
+  overflow:hidden;
+  -webkit-animation:fadeInDown 1s both 1s;
+          animation:fadeInDown 1s both 1s;
+}
+/* End HOME - CURSOS Y TALLERES */
+
+/* FLECHA para hacer la pagina hacia arriba*/
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+/* End FLECHA para hacer la pagina hacia arriba*/
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 * {
@@ -550,7 +559,6 @@ button-datos:hover:before,button-datos:hover:after{
 /* End Boton Nuevo Registro */
 
 /* Tooltip Personalizacion */
-
 .tooltip-custom .tooltip-inner {
   opacity: .85;  
   background-color: #801515 !important;
@@ -579,7 +587,6 @@ button-datos:hover:before,button-datos:hover:after{
   opacity: .85;      
   border-left-color: #801515 !important;
 }
-
 /* End Tooltip Personalizacion */
 
 
@@ -606,13 +613,11 @@ button-datos:hover:before,button-datos:hover:after{
   z-index: 1;
 }
 
-
 .label-f {
   position: absolute;
   top: 15px;
   left: 15px;
   padding: 0 4px;
-/*   background-color: white; */
   color: #DADCE0;
   font-size: 12px;
   transition: 0.5s;
@@ -643,202 +648,4 @@ button-datos:hover:before,button-datos:hover:after{
 .input-f:focus {
   border-bottom: 2px solid purple;
 }
-
-
 /* End Input-f Personalizado con Etiquetas Flotantes */
-
-
-
-
-/* Nuevo formato de INPUT-F */
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); 
-
-:root {
-  --accent-color: #6200ee;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-}
-
-
-.form-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fafafa;
-}
-
-form {
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 95%;
-  max-width: 300px;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 0.5rem;
-  box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%), 0 0 15px 0 rgb(0 0 0 / 2%), 0 0 20px 4px rgb(0 0 0 / 6%);
-}
-
-
-.input-f-container {
-  background-color: #f5f5f5;
-  position: relative;
-  border-radius: 4px 4px 0 0;
-  height: 56px;
-  transition: background-color 500ms;
-}
-
-.input-f-container:hover {
-  background-color: #ececec;
-}
-
-.input-f-container:focus-within {
-  background-color: #dcdcdc;
-}
-
-label {
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
-  color: rgba(0, 0, 0, 0.5);
-  transform-origin: left top;
-  user-select: none;
-  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
-}
-
-input-f {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background: transparent;
-  caret-color: var(--accent-color);
-  border: 1px solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.42);
-  color: rgba(0, 0, 0, 0.87);
-  transition: border 500ms;
-  padding: 20px 16px 6px;
-  font-size: 1rem;
-}
-
-input-f:focus {
-  outline: none;
-  border-bottom-width: 2px;
-  border-bottom-color: var(--accent-color);
-}
-
-input-f:focus + label {
-  color: var(--accent-color);
-}
-
-input-f:focus + label,
-input-f.is-valid + label {
-  transform: translateY(-100%) scale(0.75);
-}
-/*
-footer {
-  text-align: center;
-  padding: 0.5rem 0;
-  background-color: #eaeaea90;
-}
-
-footer p {
-  font-size: 0.75rem;
-  margin: 0.25rem 0;
-  color: #221133;
-}
-
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-/* End Nuevo formato de INPUT-F */
-
-
-
-/*
- Otros BOTONES
-
-.btnfos-3 {
-  background: #3498db;
-  border: 1px solid white;
-  box-shadow: 0px 2px 0 white, 2px 4px 6px #eee;
-  font-weight: 900;
-  letter-spacing: 1px;
-  -webkit-transition: all 150ms linear;
-          transition: all 150ms linear;
-}
-
-.btnfos-3:hover {
-  background: #3498db;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-  color: #74e6e0;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 #136a65;
-  -webkit-transition: all 250ms linear;
-          transition: all 250ms linear;
-}
-
-.btnfos-4 {
-  border: 1px solid;
-  overflow: hidden;
-  position: relative;
-}
-.btnfos-4 span {
-  z-index: 20;
-}
-.btnfos-4:after {
-  background: #fff;
-  content: "";
-  height: 155px;
-  left: -75px;
-  opacity: .2;
-  position: absolute;
-  top: -50px;
-  width: 50px;
-  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-transform: rotate(35deg);
-      -ms-transform: rotate(35deg);
-          transform: rotate(35deg);
-  z-index: -10;
-}
-
-.btnfos-4:hover:after {
-  left: 120%;
-  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btnfos-5 {
-  border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-}
-
-.btnfos-5:hover {
-  border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-  outline-offset: 15px;
-  outline-color: rgba(255, 255, 255, 0);
-  text-shadow: 1px 1px 2px #427388;
-}
-
-
-*/
-

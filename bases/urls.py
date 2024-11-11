@@ -7,11 +7,17 @@ app_name = "config"
 
 urlpatterns = [
     path('',Home.as_view(),name='home'),
+    path('Inicio',Home.as_view(template_name='base/index.html'),name='inicio'),    
     path('login/',auth_views.LoginView.as_view(template_name='bases/login.html'),
         name='login'),
     path('logout/',
          auth_views.LogoutView.as_view(template_name='bases/login.html'),
          name='logout'),
+    path('sin_privilegios/',
+         HomeSinPrivilegios.as_view(),
+         name='sin_privilegios'), 
+
+
     
     path('users/lists',UserList.as_view(),name="users_list"),
     path('users/add',user_admin,name="user_add"),

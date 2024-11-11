@@ -4,7 +4,7 @@ from django.views.generic import *
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
-
+from bases.views import SinPrivilegios
  
 from directorio.models import Condicion_Representante, Condicion_Alumno
 

@@ -15,6 +15,8 @@ urlpatterns = [
     path('alumnos/add',condicion_alumno_admin,name="condicion_alumno_new"),
     path('alumnos/modify/<int:pk>',condicion_alumno_admin,name="condicion_alumno_modify"),
     path('alumnos/delete/<int:pk>',condicion_alumno_delete,name="condicion_alumno_delete"),    
-
+    # PERSONAL
+    path('personal/list',Condicion_AlumnoView.as_view(), name='personal_escuela_list'),
+    path('personal/add',condicion_alumno_admin,name="personal_escuela_new"),
 
 ]

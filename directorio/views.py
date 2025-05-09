@@ -8,6 +8,19 @@ from bases.views import SinPrivilegios
  
 from directorio.models import Condicion_Representante, Condicion_Alumno
 
+# USANDO PYDANTIC
+#from django.http import JsonResponse
+#from . import UserForm
+#import json
+
+
+
+
+
+#from .models import UserFormModel
+#from django.http import JsonResponse
+#import sweetify
+
 # CONDICION DE LOS REPRESENTANTES
 class Condicion_RepresentanteView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     template_name = "directorio/condicion_representante_list.html"
@@ -171,4 +184,33 @@ def condicion_alumno_delete(request,pk):
         messages.success(request,"Registro Borrado Satisfactoriamente")
         return HttpResponse("OK")    
 
+# USANDO PYDANTIC
+
+#def registrar_usuario(request):
+#    if request.method == 'POST':
+#        data = request.POST
+#        try:
+#            # Crear una instancia del modelo Pydantic
+#            user_form = UserFormModel(
+#                nombres=data['nombres'],
+#                apellidos=data['apellidos'],
+#                edad=int(data['edad']),
+#                fecha=data['fecha'],
+##                email=data['email'],
+#                telefono_casa=data['telefono_casa'],
+#                telefono_movil=data['telefono_movil'],
+#                sueldo=data['sueldo']
+#            )
+            # Aquí podrías guardar los datos en una base de datos si la validación es correcta
+            # Por ejemplo: Usuario.objects.create(**user_form.dict())
+#            sweetify.success(request, "Usuario registrado con éxito")
+#            return redirect('success')
+            # SUCCESS .. cambiar por la pagina html.. ejemplo return redirect('direc:personal_escuela_list')
+
+        
+#        except ValidationError as e:
+#            # Recolectar mensajes de error personalizados de cada campo
+#            errors = {err['loc'][0]: err['msg'] for err in e.errors()}
+#            return JsonResponse({'errors': errors}, status=400)
+#    return render(request, 'direc:personal_escuela_new')
 
